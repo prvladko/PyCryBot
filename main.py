@@ -1,5 +1,6 @@
 import tkinter as tk
 import logging
+from binance_futures import write_log
 
 logger = logging.getLogger()
 
@@ -21,6 +22,8 @@ logger.debug('this message is important only when debugging the program')
 logger.info('this message just shows basic information')
 logger.warning('this message is about something you should pay attention to')
 logger.error('this message helps to debug an error that occurred in program')
+
+write_log()
 
 root = tk.Tk()  # main window of the bot
 root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)
