@@ -24,4 +24,8 @@ if __name__ == 'main':  # statement will be executed only if the main module wil
     bitmex_contracts = get_contracts()
 
     root = tk.Tk()  # main window of the bot
+
+    for contract in bitmex_contracts:
+        label_widget = tk.Label()  #create label widget
+
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)
