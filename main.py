@@ -1,6 +1,8 @@
 import tkinter as tk
 import logging
 
+from bitmex import get_contracts
+
 logger = logging.getLogger()
 
 logger.setLevel(logging.INFO)  # min logger level (for the 'Debug' level of message to show in info.log change to logger.setLevel(logging.DEBUG)
@@ -18,5 +20,8 @@ logger.addHandler(stream_handler)  # add stream_handler to the logger instance
 logger.addHandler(file_handler)
 
 if __name__ == 'main':  # statement will be executed only if the main module will be executed
+
+    bitmex_contracts = get_contracts()
+
     root = tk.Tk()  # main window of the bot
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)
