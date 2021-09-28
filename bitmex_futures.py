@@ -6,8 +6,10 @@ logger = logging.getLogger()
 
 def get_contracts():
     contracts = []
-
-    response_object = requests.get('https://bitmex.com/api/v1/instrument/active')
+    # response_object = requests.get('https://testnet.bitmex.com/api/v1/instrument')  # for test
+    response_object = requests.get('https://testnet.bitmex.com/api/v1/instrument/active')  # from https://binance-docs.github.io/apidocs/futures/en/#check-server-time
+    #print(response_object.status_code)
+    #pprint.pprint(response_object.json())
 
     for contract in response_object.json():
         contracts.append(contract['symbol'])
