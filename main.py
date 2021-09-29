@@ -29,11 +29,11 @@ if __name__ == '__main__':  # statement will be executed only if the main module
     j = 0  # column number
 
     for contract in binance_contracts:
-        label_widget = tk.Label(root, text=contract)
+        label_widget = tk.Label(root, text=contract, borderwidth=1, relief=tk.SOLID, width=13)
         #label_widget.pack(side=tk.LEFT)  # TOP,BOTTOM,LEFT,RIGHT # .pack method places widgets relatively to each other
-        label_widget.grid(row=i, column=j)  # .grid method can specify the column and row number of each widget
+        label_widget.grid(row=i, column=j, sticky='ew')  # .grid method can specify the column and row number of each widget
 
-        if i ==4:
+        if i ==9:
             j += 1
             i = 0
         else:
