@@ -28,8 +28,10 @@ if __name__ == '__main__':  # statement will be executed only if the main module
     i = 0  # need for .grid method (first widget will be placed on the first row)
     j = 0  # column number
 
+    calibri_font = ('Calibri', 11, 'bold')
+
     for contract in binance_contracts:
-        label_widget = tk.Label(root, text=contract, borderwidth=1, relief=tk.SOLID, width=13)
+        label_widget = tk.Label(root, text=contract, bg='gray12', fg='SteelBlue1', width=13, font=calibri_font)
         #label_widget.pack(side=tk.LEFT)  # TOP,BOTTOM,LEFT,RIGHT # .pack method places widgets relatively to each other
         label_widget.grid(row=i, column=j, sticky='ew')  # .grid method can specify the column and row number of each widget
 
