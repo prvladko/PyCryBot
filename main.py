@@ -26,11 +26,17 @@ if __name__ == '__main__':  # statement will be executed only if the main module
     root = tk.Tk()  # main window of the bot
 
     i = 0  # need for .grid method (first widget will be placed on the first row)
+    j = 0  # column number
 
     for contract in binance_contracts:
         label_widget = tk.Label(root, text=contract)
         #label_widget.pack(side=tk.LEFT)  # TOP,BOTTOM,LEFT,RIGHT # .pack method places widgets relatively to each other
-        label_widget.grid(row=i, column=0)  # .grid method can specify the column and row number of each widget
-        i += 1
+        label_widget.grid(row=i, column=j)  # .grid method can specify the column and row number of each widget
+
+        if i ==4:
+            j += 1
+            i = 0
+        else:
+            i += 1
 
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)
