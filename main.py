@@ -27,7 +27,7 @@ if __name__ == 'main':  # statement will be executed only if the main module wil
 
     i = 0
 
-    for contract in bitmex_contracts:
+    for contract in binance_contracts:
         label_widget = tk.Label(root, text=contract)
         label_widget.grid(row=i, column=0)
 
