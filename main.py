@@ -19,7 +19,7 @@ file_handler.setLevel(logging.DEBUG)
 logger.addHandler(stream_handler)  # add stream_handler to the logger instance
 logger.addHandler(file_handler)
 
-if __name__ == 'main':  # statement will be executed only if the main module will be executed
+if __name__ == '__main__':  # statement will be executed only if the main module will be executed
 
     binance_contracts = get_contracts()
 
