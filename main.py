@@ -24,6 +24,7 @@ if __name__ == '__main__':  # statement will be executed only if the main module
     binance_contracts = get_contracts()
 
     root = tk.Tk()  # main window of the bot
+    root.configure(bg='gray12')
 
     i = 0  # need for .grid method (first widget will be placed on the first row)
     j = 0  # column number
