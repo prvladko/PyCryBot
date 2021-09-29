@@ -1,7 +1,7 @@
 import tkinter as tk
 import logging
 
-from bitmex import get_contracts
+from binance_futures import get_contracts
 
 logger = logging.getLogger()
 
@@ -21,7 +21,7 @@ logger.addHandler(file_handler)
 
 if __name__ == 'main':  # statement will be executed only if the main module will be executed
 
-    bitmex_contracts = get_contracts()
+    binance_contracts = get_contracts()
 
     root = tk.Tk()  # main window of the bot
 
