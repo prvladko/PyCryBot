@@ -60,7 +60,7 @@ class BinanceFuturesClient:
         ob_data = self.make_request('GET', '/fapi/v1/ticker/bookTicker', data)
 
         if ob_data is not None:
-            if symbol is not in self.prices:
+            if symbol not in self.prices:
                 self.prices[symbol] = {'bid': float(ob_data['bidPrice']), 'ask': float(ob_data['askPrice'])}
             else:
                 self.prices[symbol]['bid'] = float(ob_data['bidPrice'])
