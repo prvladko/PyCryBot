@@ -1,5 +1,5 @@
 import tkinter as tk
-from bitmex import get_contracts
+from connectors.bitmex import get_contracts
 
 #if __name__ == 'main_test':  # statement will be executed only if the main module will be executed
 
