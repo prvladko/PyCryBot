@@ -26,8 +26,14 @@ class BinanceFuturesClient:
             return None
 
     def get_contracts(self):
-        requests.get()
-        return
+        exchange_info = self.make_request('GET', 'fapi/v1/exchangeInfo', None)
+
+        contracts = dict()
+
+        if exchange_info is not None:
+            for contract_data in exchange_info['symbols']:
+                contracts[contract_data['pair']] = contract_data
+        return contracts
 
     def get_historical_candles(self):
         requests.get()
