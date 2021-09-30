@@ -11,3 +11,12 @@ class BinanceFuturesClient:
             self.base_url = 'https://fapi.binance.com'
 
         logger.info('Binance Futures Client is successfully initialized')
+
+    def get_contracts(self):
+        return
+
+    def get_historical_candles(self):
+        return
+
+    def get_bid_ask(self):
+        return
