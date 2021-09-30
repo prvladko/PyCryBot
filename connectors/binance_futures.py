@@ -10,6 +10,8 @@ class BinanceFuturesClient:
         else:
             self.base_url = 'https://fapi.binance.com'
 
+        self.prices = dict()
+
         logger.info('Binance Futures Client is successfully initialized')
 
     def make_request(self, method, endpoint, data):
@@ -36,9 +38,19 @@ class BinanceFuturesClient:
         return contracts
 
     def get_historical_candles(self):
-        requests.get()
+
         return
 
-    def get_bid_ask(self):
-        requests.get()
-        return
+    def get_bid_ask(self, symbol):
+        #'https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker?symbol=BTCUSDT'  # can add parameters with "&" FOR EXAMPLE ...?symbol=BTCUSDT&key=value&key2=value2'
+        data = dict()
+        data['symbol'] = symbol
+        ob_data = self.make_request('GET', '/fapi/v1/ticker/bookTicker', data)
+
+        if ob_data is not None:
+            if symbol is not in self.prices:
+                self.prices[symbol] = {'bid': float(ob_data['bidPrice']), 'ask': float(ob_data['askPrice'])}
+            else:
+                self.prices[symbol]['bid'] = float(ob_data['bidPrice'])
+                self.prices[symbol]['ask'] = float(ob_data['askPrice'])
+        return self.prices[symbol]
