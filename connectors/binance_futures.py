@@ -20,7 +20,7 @@ class BinanceFuturesClient:
         else:
             raise ValueError()
 
-        if response.status_code == '200':
+        if response.status_code == 200:
             return response.json()
         else:
             logger.error('Error while making %s request to %s: %s (error code %s)',
@@ -28,7 +28,7 @@ class BinanceFuturesClient:
             return None
 
     def get_contracts(self):
-        exchange_info = self.make_request('GET', 'fapi/v1/exchangeInfo', None)
+        exchange_info = self.make_request('GET', '/fapi/v1/exchangeInfo', None)
 
         contracts = dict()
 
