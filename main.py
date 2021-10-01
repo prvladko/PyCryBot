@@ -1,7 +1,7 @@
 import tkinter as tk
 import logging
 
-from connectors.binance_futures import get_contracts
+from connectors.binance_futures import BinanceFuturesClient
 
 logger = logging.getLogger()
 
@@ -21,25 +21,7 @@ logger.addHandler(file_handler)
 
 if __name__ == '__main__':  # statement will be executed only if the main module will be executed
 
-    binance_contracts = get_contracts()
+    binance = BinanceFuturesClient(True)
 
     root = tk.Tk()  # main window of the bot
-    root.configure(bg='gray12')
-
-    i = 0  # need for .grid method (first widget will be placed on the first row)
-    j = 0  # column number
-
-    calibri_font = ('Calibri', 11, 'bold')
-
-    for contract in binance_contracts:
-        label_widget = tk.Label(root, text=contract, bg='gray12', fg='SteelBlue1', width=13, font=calibri_font)
-        #label_widget.pack(side=tk.LEFT)  # TOP,BOTTOM,LEFT,RIGHT # .pack method places widgets relatively to each other
-        label_widget.grid(row=i, column=j, sticky='ew')  # .grid method can specify the column and row number of each widget
-
-        if i ==9:
-            j += 1
-            i = 0
-        else:
-            i += 1
-
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)
