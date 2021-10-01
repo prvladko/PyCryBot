@@ -1,5 +1,6 @@
 import logging
 import requests
+import time
 
 logger = logging.getLogger()
 
@@ -11,7 +12,9 @@ class BinanceFuturesClient:
             self.base_url = 'https://fapi.binance.com'
 
         self.public_key = public_key
-        self.secret_key = secret_key
+        self.secret_key =
+
+        self.headers = {'X-MBX-APIKEY': self.public_key}
 
         self.prices = dict()
 
@@ -19,7 +22,7 @@ class BinanceFuturesClient:
 
     def make_request(self, method, endpoint, data):
         if method == 'GET':
-            response = requests.get(self.base_url + endpoint, params=data)
+            response = requests.get(self.base_url + endpoint, params=data, headers=self.headers)
         else:
             raise ValueError()
 
@@ -71,6 +74,12 @@ class BinanceFuturesClient:
         return self.prices[symbol]
 
     def get_balances(self):
+        data = dict()
+        data['timestamp'] = int(time.time() * 1000)
+        data['signature'] = self.generate_signature(data)
+
+        account_data = self.make_request('GET', '/fapi/v1/account', data)
+
         return
 
     def place_order(self):
