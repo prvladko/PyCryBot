@@ -20,6 +20,9 @@ class BinanceFuturesClient:
 
         logger.info('Binance Futures Client is successfully initialized')
 
+    def generate_signature(self):
+        return
+
     def make_request(self, method, endpoint, data):
         if method == 'GET':
             response = requests.get(self.base_url + endpoint, params=data, headers=self.headers)
