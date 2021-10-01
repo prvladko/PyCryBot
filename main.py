@@ -21,7 +21,8 @@ logger.addHandler(file_handler)
 
 if __name__ == '__main__':  # statement will be executed only if the main module will be executed
 
-    binance = BinanceFuturesClient(True)
+    binance = BinanceFuturesClient('c6e7aca13a233c0175ef4ed481646d2caa897fe21eaa45cfb23a165bee6fc5e6',
+                                   '1087241583949a8aa9ba274a310c37783b276c1e84acdcf7de9dae76a83dfa67', True)
     print(binance.get_historical_candles('BTCUSDT', '1h'))  # test modules
 
     root = tk.Tk()  # main window of the bot
