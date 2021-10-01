@@ -86,10 +86,13 @@ class BinanceFuturesClient:
         data = dict()
         data['timestamp'] = int(time.time() * 1000)
         data['signature'] = self.generate_signature(data)
-
+        balances = dict()
         account_data = self.make_request('GET', '/fapi/v1/account', data)
 
-        return
+        if account_data is not None:
+            for a in account_data['assets']:
+                balances[a['asset']] = a
+        return balances
 
     def place_order(self):
         return
