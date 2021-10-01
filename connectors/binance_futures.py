@@ -26,7 +26,7 @@ class BinanceFuturesClient:
 
         logger.info('Binance Futures Client is successfully initialized')
 
-    def generate_signature(self):
+    def generate_signature(self, data):
         return hmac.new(self.secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()  # convert from string to bite code
 
     def make_request(self, method, endpoint, data):
