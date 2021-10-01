@@ -22,6 +22,7 @@ logger.addHandler(file_handler)
 if __name__ == '__main__':  # statement will be executed only if the main module will be executed
 
     binance = BinanceFuturesClient(True)
+    print(binance.get_contracts())
 
     root = tk.Tk()  # main window of the bot
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)
