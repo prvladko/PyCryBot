@@ -43,7 +43,7 @@ class BinanceFuturesClient:
         data['interval'] = interval
         data['limit'] = 1000
 
-        raw_candles = self.make_request('GET', 'fapi/v1/klines', data)
+        raw_candles = self.make_request('GET', '/fapi/v1/klines', data)
 
         candles = []
 
