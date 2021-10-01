@@ -18,7 +18,7 @@ class BinanceFuturesClient:
             self.base_url = 'https://fapi.binance.com'
 
         self.public_key = public_key
-        self.secret_key =
+        self.secret_key = secret_key
 
         self.headers = {'X-MBX-APIKEY': self.public_key}
 
