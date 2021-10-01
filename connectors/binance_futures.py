@@ -32,6 +32,10 @@ class BinanceFuturesClient:
     def make_request(self, method, endpoint, data):
         if method == 'GET':
             response = requests.get(self.base_url + endpoint, params=data, headers=self.headers)
+        elif method == 'POST':
+            response = requests.post(self.base_url + endpoint, params=data, headers=self.headers)
+        elif method == 'DELETE':
+            response = requests.delete(self.base_url + endpoint, params=data, headers=self.headers)
         else:
             raise ValueError()
 
@@ -94,8 +98,24 @@ class BinanceFuturesClient:
                 balances[a['asset']] = a
         return balances
 
-    def place_order(self):
-        return
+    def place_order(self, symbol, side, quantity, order_type, price=None, tif=None):
+        data = dict()
+        data['symbol'] = symbol
+        data['side'] = side
+        data['quantity'] = quantity
+        data['type'] = order_type
+
+        if price is not None:
+            data['price'] = price
+
+        if tif is not None:
+            data['timeInForce'] = tif
+
+        data['timestamp'] = int(time.time() * 1000)
+        data['signature'] = self.generate_signature(data)
+
+        order_status = self.make_request('POST', '/fapi/v1/order', data)
+        return order_status
 
     def cancel_order(self):
         return
