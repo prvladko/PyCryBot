@@ -44,10 +44,10 @@ class BinanceFuturesClient:
 
         logger.info('Binance Futures Client is successfully initialized')
 
-    def generate_signature(self, data: typing.Dict):
+    def generate_signature(self, data: typing.Dict) -> str:
         return hmac.new(self.secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()  # convert from string to bit code
 
-    def make_request(self, method: str, endpoint: str, data: typing.Dict):
+    def make_request(self, method: str, endpoint: str, data: typing.Dict):  # doesn't return the same output, so can be None o JSON object, not going to type it with '->'
         if method == 'GET':
             response = requests.get(self.base_url + endpoint, params=data, headers=self.headers)
         elif method == 'POST':
@@ -62,10 +62,10 @@ class BinanceFuturesClient:
         else:
             logger.error('Error while making %s request to %s: %s (error code %s)',
                          method, endpoint, response.json(), response.status_code)
-            return None
+            return None  #
 
-    def get_contracts(self):
-        exchange_info = self.make_request('GET', '/fapi/v1/exchangeInfo', None)
+    def get_contracts(self) -> typing.Dict[str, Contract]:  # returns a specified dictionary with str as keys & Contract object as values
+        exchange_info = self.make_request('GET', '/fapi/v1/exchangeInfo', dict())
 
         contracts = dict()
 
@@ -76,7 +76,7 @@ class BinanceFuturesClient:
 
         return contracts
 
-    def get_historical_candles(self, contract: Contract, interval: str):
+    def get_historical_candles(self, contract: Contract, interval: str) -> typing.List[Candle]:
         data = dict()
         data['symbol'] = contract.symbol
         data['interval'] = interval
@@ -93,7 +93,7 @@ class BinanceFuturesClient:
 
         return candles
 
-    def get_bid_ask(self, contract: Contract):
+    def get_bid_ask(self, contract: Contract) -> typing.Dict[str, float]:
         #'https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker?symbol=BTCUSDT'  # can add parameters with "&" FOR EXAMPLE ...?symbol=BTCUSDT&key=value&key2=value2'
         data = dict()
         data['symbol'] = contract.symbol
@@ -108,7 +108,7 @@ class BinanceFuturesClient:
 
             return self.prices[contract.symbol]
 
-    def get_balances(self):
+    def get_balances(self) -> typing.Dict[str, Balance]:
         data = dict()
         data['timestamp'] = int(time.time() * 1000)
         data['signature'] = self.generate_signature(data)
@@ -122,7 +122,7 @@ class BinanceFuturesClient:
 
         return balances
 
-    def place_order(self, contract: Contract, side: str, quantity: float, order_type: str, price=None, tif=None):
+    def place_order(self, contract: Contract, side: str, quantity: float, order_type: str, price=None, tif=None)  -> OrderStatus:
         data = dict()
         data['symbol'] = contract.symbol
         data['side'] = side
@@ -145,7 +145,7 @@ class BinanceFuturesClient:
 
         return order_status
 
-    def cancel_order(self, contract: Contract, order_id: int):
+    def cancel_order(self, contract: Contract, order_id: int)  -> OrderStatus:
         data = dict()
         data['symbol'] = contract.symbol
         data['orderID'] = order_id
@@ -158,7 +158,7 @@ class BinanceFuturesClient:
 
         return order_status
 
-    def get_order_status(self, contract: Contract, order_id: int):
+    def get_order_status(self, contract: Contract, order_id: int) -> OrderStatus:
 
         data = dict()
         data['timestamp'] = int(time.time() * 1000)
@@ -201,8 +201,6 @@ class BinanceFuturesClient:
                 else:
                     self.prices[symbol]['bid'] = float(data['b'])
                     self.prices[symbol]['ask'] = float(data['a'])
-
-                print(self.prices[symbol])
 
     def subscribe_channel(self, contract: Contract):
         data = dict()
