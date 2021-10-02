@@ -49,11 +49,26 @@ class BinanceFuturesClient:
 
     def make_request(self, method: str, endpoint: str, data: typing.Dict):  # doesn't return the same output, so can be None o JSON object, not going to type it with '->'
         if method == 'GET':
-            response = requests.get(self.base_url + endpoint, params=data, headers=self.headers)
+            try:
+                response = requests.get(self.base_url + endpoint, params=data, headers=self.headers)
+            except Exception as e:
+                logger.error('Connection error while making %s request to %s: %s', method, endpoint, e)
+                return None
+
         elif method == 'POST':
-            response = requests.post(self.base_url + endpoint, params=data, headers=self.headers)
+            try:
+                response = requests.post(self.base_url + endpoint, params=data, headers=self.headers)
+            except Exception as e:
+                logger.error('Connection error while making %s request to %s: %s', method, endpoint, e)
+                return None
+
         elif method == 'DELETE':
-            response = requests.delete(self.base_url + endpoint, params=data, headers=self.headers)
+            try:
+                response = requests.delete(self.base_url + endpoint, params=data, headers=self.headers)
+            except Exception as e:
+                logger.error('Connection error while making %s request to %s: %s', method, endpoint, e)
+                return None
+
         else:
             raise ValueError()
 
