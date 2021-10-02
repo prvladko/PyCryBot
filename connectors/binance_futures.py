@@ -70,7 +70,9 @@ class BinanceFuturesClient:
 
         if exchange_info is not None:
             for contract_data in exchange_info['symbols']:
-                contracts[contract_data['pair']] = contract_data
+                contracts[contract_data['pair']] = Contract(contract_data)
+        #contracts['BTCUSDT'].price_decimals  # is just for testing
+
         return contracts
 
     def get_historical_candles(self, symbol, interval):
@@ -136,6 +138,10 @@ class BinanceFuturesClient:
         data['signature'] = self.generate_signature(data)
 
         order_status = self.make_request('POST', '/fapi/v1/order', data)
+
+        if order_status is not None:
+            order_status = OrderStatus(order_status)
+
         return order_status
 
     def cancel_order(self, symbol, order_id):
@@ -145,6 +151,10 @@ class BinanceFuturesClient:
         data['timestamp'] = int(time.time() * 1000)
         data['signature'] = self.generate_signature(data)
         order_status = self.make_request('DELETE', '/fapi/v1/order', data)
+
+        if order_status is not None:
+            order_status = OrderStatus(order_status)
+
         return order_status
 
     def get_order_status(self, symbol, order_id):
@@ -155,6 +165,10 @@ class BinanceFuturesClient:
         data['orderID'] = order_id
         data['signature'] = self.generate_signature(data)
         order_status = self.make_request('GET', '/fapi/v1/order', data)
+
+        if order_status is not None:
+            order_status = OrderStatus(order_status)
+
         return order_status
 
     def start_ws(self):

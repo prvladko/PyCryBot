@@ -24,3 +24,9 @@ class Contract:
         self.quote_asset = contract_info['quoteAsset']
         self.price_decimals = contract_info['pricePrecision']
         self.quantity_decimals = contract_info['quantityPrecision']
+
+class OrderStatus:
+    def __init__(self, order_info):
+        self.order_id = order_info['orderId']
+        self.status = order_info['status']
+        self.avg_price = float(order_info['avgPrice'])
