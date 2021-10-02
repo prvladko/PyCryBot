@@ -36,7 +36,7 @@ class BinanceFuturesClient:
 
         self.prices = dict()
 
-        self.id = 1
+        self.ws_id = 1
         self.ws = None
 
         t = threading.Thread(target=self.start_ws)
@@ -222,11 +222,15 @@ class BinanceFuturesClient:
         data['method'] = 'SUBSCRIBE'
         data['params'] = []  # list of channels to subscribe too
         data['params'].append(contract.symbol.lower() + '@bookTicker')
-        data['id'] = self.id
+        data['id'] = self.ws_id
 
         print(data, type(data))
         print(json.dumps(data), type(json.dumps(data)))
 
-        self.ws.send(json.dumps(data))
+        try:
+            self.ws.send(json.dumps(data))
+        except Exception as e:
+            logger.error('Websocket error while subscribing to %s: %s', contract.symbol, e)
+            return None
 
-        self.id += 1
+        self.ws_id += 1
