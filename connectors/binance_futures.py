@@ -20,24 +20,24 @@ logger = logging.getLogger()
 class BinanceFuturesClient:
     def __init__(self, public_key: str, secret_key: str, testnet: bool):
         if testnet:
-            self.base_url = 'https://testnet.binancefuture.com'
-            self.wss_url = 'wss://stream.binancefuture.com/ws'  # in documentation 'wss://testnet.binancefuture.com' wtf???
+            self._base_url = 'https://testnet.binancefuture.com'
+            self._wss_url = 'wss://stream.binancefuture.com/ws'  # in documentation 'wss://testnet.binancefuture.com' wtf???
         else:
-            self.base_url = 'https://fapi.binance.com'
-            self.wss_url = 'wss://fstream.binance.com/ws'
+            self._base_url = 'https://fapi.binance.com'
+            self._wss_url = 'wss://fstream.binance.com/ws'
 
-        self.public_key = public_key
-        self.secret_key = secret_key
+        self._public_key = public_key
+        self._secret_key = secret_key
 
-        self.headers = {'X-MBX-APIKEY': self.public_key}
+        self._headers = {'X-MBX-APIKEY': self._public_key}
 
         self.contracts = self.get_contracts()
         self.balances = self.get_balances()
 
         self.prices = dict()
 
-        self.ws_id = 1
-        self.ws = None
+        self._ws_id = 1
+        self._ws = None
 
         t = threading.Thread(target=self._start_ws)
         t.start()
@@ -45,26 +45,26 @@ class BinanceFuturesClient:
         logger.info('Binance Futures Client is successfully initialized')
 
     def _generate_signature(self, data: typing.Dict) -> str:
-        return hmac.new(self.secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()  # convert from string to bit code
+        return hmac.new(self._secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()  # convert from string to bit code
 
     def _make_request(self, method: str, endpoint: str, data: typing.Dict):  # doesn't return the same output, so can be None o JSON object, not going to type it with '->'
         if method == 'GET':
             try:
-                response = requests.get(self.base_url + endpoint, params=data, headers=self.headers)
+                response = requests.get(self._base_url + endpoint, params=data, headers=self._headers)
             except Exception as e:
                 logger.error('Connection error while making %s request to %s: %s', method, endpoint, e)
                 return None
 
         elif method == 'POST':
             try:
-                response = requests.post(self.base_url + endpoint, params=data, headers=self.headers)
+                response = requests.post(self._base_url + endpoint, params=data, headers=self._headers)
             except Exception as e:
                 logger.error('Connection error while making %s request to %s: %s', method, endpoint, e)
                 return None
 
         elif method == 'DELETE':
             try:
-                response = requests.delete(self.base_url + endpoint, params=data, headers=self.headers)
+                response = requests.delete(self._base_url + endpoint, params=data, headers=self._headers)
             except Exception as e:
                 logger.error('Connection error while making %s request to %s: %s', method, endpoint, e)
                 return None
@@ -137,7 +137,7 @@ class BinanceFuturesClient:
 
         return balances
 
-    def place_order(self, contract: Contract, side: str, quantity: float, order_type: str, price=None, tif=None)  -> OrderStatus:
+    def place_order(self, contract: Contract, side: str, quantity: float, order_type: str, price=None, tif=None) -> OrderStatus:
         data = dict()
         data['symbol'] = contract.symbol
         data['side'] = side
@@ -188,7 +188,8 @@ class BinanceFuturesClient:
         return order_status
 
     def _start_ws(self):
-        self.ws = websocket.WebSocketApp(self.wss_url, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error, on_message=self._on_message)
+        self.ws = websocket.WebSocketApp(self._wss_url, on_open=self._on_open, on_close=self._on_close,
+                                         on_error=self._on_error, on_message=self._on_message)
 
         while True:
             try:
@@ -200,7 +201,7 @@ class BinanceFuturesClient:
     def _on_open(self, ws):
         logger.info('Binance Websocket connection opened')
 
-        self.subscribe_channel('BTCUSDT')
+        self.subscribe_channel(self.contracts['BTCUSDT'])
 
     def _on_close(self, ws):
         logger.warning('Binance Websocket connection closed')
@@ -228,7 +229,7 @@ class BinanceFuturesClient:
         data['method'] = 'SUBSCRIBE'
         data['params'] = []  # list of channels to subscribe too
         data['params'].append(contract.symbol.lower() + '@bookTicker')
-        data['id'] = self.ws_id
+        data['id'] = self._ws_id
 
         print(data, type(data))
         print(json.dumps(data), type(json.dumps(data)))
@@ -239,4 +240,4 @@ class BinanceFuturesClient:
             logger.error('Websocket error while subscribing to %s: %s', contract.symbol, e)
             return None
 
-        self.ws_id += 1
+        self._ws_id += 1
