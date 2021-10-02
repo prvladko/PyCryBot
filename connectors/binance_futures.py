@@ -8,6 +8,7 @@ import hmac
 import hashlib
 
 import websocket
+import threading
 
 logger = logging.getLogger()
 
@@ -15,7 +16,7 @@ class BinanceFuturesClient:
     def __init__(self, public_key, secret_key, testnet):
         if testnet:
             self.base_url = 'https://testnet.binancefuture.com'
-            self.wss_url = 'wss://testnet.binancefuture.com/ws'  # in video 'wss://stream.binancefuture.com'
+            self.wss_url = 'wss://stream.binancefuture.com/ws'  # in video 'wss://stream.binancefuture.com'
         else:
             self.base_url = 'https://fapi.binance.com'
             self.wss_url = 'wss://fstream.binance.com/ws'
@@ -26,6 +27,9 @@ class BinanceFuturesClient:
         self.headers = {'X-MBX-APIKEY': self.public_key}
 
         self.prices = dict()
+
+        t = threading.Thread(target=self.start_ws)
+        t.start()
 
         logger.info('Binance Futures Client is successfully initialized')
 
@@ -140,6 +144,17 @@ class BinanceFuturesClient:
         return order_status
 
     def start_ws(self):
-        ws = websocket.WebSocketApp(self.wss_url, on_open=self.on_open)
-        return
+        ws = websocket.WebSocketApp(self.wss_url, on_open=self.on_open, on_close=self.on_close, on_error=self.on_error, on_message=self.on_message)
+        ws.run_forever()  # infinite loop
 
+    def on_open(self, ws):
+        logger.info('Binance Websocket connection opened')
+
+    def on_close(self, ws):
+        logger.warning('Binance Websocket connection closed')
+
+    def on_error(self, ws, msg):
+        logger.error('Binance connection error: %s', msg)
+
+    def on_message(self, ws, msg):
+        print(msg)
