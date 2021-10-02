@@ -23,10 +23,10 @@ if __name__ == '__main__':  # statement will be executed only if the main module
 
     binance = BinanceFuturesClient('c6e7aca13a233c0175ef4ed481646d2caa897fe21eaa45cfb23a165bee6fc5e6',
                                    '1087241583949a8aa9ba274a310c37783b276c1e84acdcf7de9dae76a83dfa67', True)
-    print(binance.get_balances())  # test modules
+    #print(binance.get_balances())  # test modules
     #print(binance.place_order('BTCUSDT', 'BUY', 0.01, 'LIMIT', 20000, 'GTC'))
-    print(binance.get_order_status('BTCUSDT', 2828701453))
-    print(binance.cancel_order('BTCUSDT', 2828701453))
+    #print(binance.get_order_status('BTCUSDT', 2828701453))
+    #print(binance.cancel_order('BTCUSDT', 2828701453))
 
     root = tk.Tk()  # main window of the bot
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)
