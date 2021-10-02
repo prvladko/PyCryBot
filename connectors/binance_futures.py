@@ -28,6 +28,9 @@ class BinanceFuturesClient:
 
         self.prices = dict()
 
+        self.id = 1
+        self.ws = None
+
         t = threading.Thread(target=self.start_ws)
         t.start()
 
@@ -144,8 +147,8 @@ class BinanceFuturesClient:
         return order_status
 
     def start_ws(self):
-        ws = websocket.WebSocketApp(self.wss_url, on_open=self.on_open, on_close=self.on_close, on_error=self.on_error, on_message=self.on_message)
-        ws.run_forever()  # infinite loop
+        self.ws = websocket.WebSocketApp(self.wss_url, on_open=self.on_open, on_close=self.on_close, on_error=self.on_error, on_message=self.on_message)
+        self.ws.run_forever()  # infinite loop
 
     def on_open(self, ws):
         logger.info('Binance Websocket connection opened')
@@ -158,3 +161,14 @@ class BinanceFuturesClient:
 
     def on_message(self, ws, msg):
         print(msg)
+
+    def subscribe_channel(self, symbol):
+        data = dict()
+        data['method'] = 'SUBSCRIBE'
+        data['params'] = []  # list of channels to subscribe too
+        data['params'].append(symbol.lower() + '@bookTicker')
+        data['id'] = self.id
+
+        self.ws.send()
+
+        self.id += 1
