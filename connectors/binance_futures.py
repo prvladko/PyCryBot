@@ -12,6 +12,8 @@ import json
 
 import threading
 
+from models import *
+
 logger = logging.getLogger()
 
 class BinanceFuturesClient:
@@ -39,7 +41,7 @@ class BinanceFuturesClient:
         logger.info('Binance Futures Client is successfully initialized')
 
     def generate_signature(self, data):
-        return hmac.new(self.secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()  # convert from string to bite code
+        return hmac.new(self.secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()  # convert from string to bit code
 
     def make_request(self, method, endpoint, data):
         if method == 'GET':
@@ -80,7 +82,8 @@ class BinanceFuturesClient:
 
         if raw_candles is not None:
             for candle in raw_candles:
-                candles.append([candle[0], float(candle[1]), float(candle[2]), float(candle[3]), float(candle[4]), float(candle[5])])
+                candles.append(Candle(c))
+        #candles[-1].low
 
         return candles
 
@@ -108,7 +111,9 @@ class BinanceFuturesClient:
 
         if account_data is not None:
             for a in account_data['assets']:
-                balances[a['asset']] = a
+                balances[a['asset']] = Balance(a)
+        print(balances['USDT'].wallet_balance)
+
         return balances
 
     def place_order(self, symbol, side, quantity, order_type, price=None, tif=None):
