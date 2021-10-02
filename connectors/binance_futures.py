@@ -189,7 +189,13 @@ class BinanceFuturesClient:
 
     def start_ws(self):
         self.ws = websocket.WebSocketApp(self.wss_url, on_open=self.on_open, on_close=self.on_close, on_error=self.on_error, on_message=self.on_message)
-        self.ws.run_forever()  # infinite loop
+
+        while True:
+            try:
+                self.ws.run_forever()  # infinite loop
+            except Exception as e:
+                logger.error('Binance error in run_forever() method: %s', e)
+            time.sleep(2)
 
     def on_open(self, ws):
         logger.info('Binance Websocket connection opened')
