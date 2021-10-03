@@ -1,5 +1,6 @@
 import typing
 
+BITMEX_MULTIPLIER = 0.00000001
 
 class Balance:
     def __init__(self, balance_info: typing.Dict, exchange: str):
@@ -10,11 +11,11 @@ class Balance:
             self.wallet_balance = float(balance_info['walletBalance'])
             self.unrealized_pnl = float(balance_info['unrealizedProfit'])
         elif exchange == 'bitmex':
-            self.initial_margin = float(balance_info['initMargin'])
-            self.maintenance_margin = float(balance_info['maintMargin'])
-            self.margin_balance = float(balance_info['marginBalance'])
-            self.wallet_balance = float(balance_info['walletBalance'])
-            self.unrealized_pnl = float(balance_info['unrealisedPnl'])
+            self.initial_margin = float(balance_info['initMargin']) * BITMEX_MULTIPLIER
+            self.maintenance_margin = float(balance_info['maintMargin']) * BITMEX_MULTIPLIER
+            self.margin_balance = float(balance_info['marginBalance']) * BITMEX_MULTIPLIER
+            self.wallet_balance = float(balance_info['walletBalance']) * BITMEX_MULTIPLIER
+            self.unrealized_pnl = float(balance_info['unrealisedPnl']) * BITMEX_MULTIPLIER
 
 class Candle:
     def __init__(self, candle_info: typing.Dict, exchange: str):
