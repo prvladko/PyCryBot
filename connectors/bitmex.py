@@ -41,3 +41,69 @@ class BitmexClient:
         t.start()
 
         logger.info('Bitmex Client successfully initialized')
+
+    def _generate_signature(self, method: str, endpoint: str, expires: str, data: typing.Dict) -> str:
+
+        message = method + endpoint + '?' + urlencode(data) + expires if len(data) > 0 else method + endpoint + expires
+        return hmac.new(self._secret_key.encode(), message.encode(), hashlib.sha256).hexdigest()
+
+    def _make_request(self, method: str, endpoint: str, data: typing.Dict):  # doesn't return the same output, so can be None o JSON object, not going to type it with '->'
+
+        headers = dict()
+        expires = str(int(time.time())) + 5)
+        headers['api-expires'] = expires
+        headers['api-key'] = self._public_key
+        headers['api-signature'] = self._generate_signature(method, endpoint, expires, data)
+
+        if method == 'GET':
+            try:
+                response = requests.get(self._base_url + endpoint, params=data, headers=headers)
+            except Exception as e:
+                logger.error('Connection error while making %s request to %s: %s', method, endpoint, e)
+                return None
+
+        elif method == 'POST':
+            try:
+                response = requests.post(self._base_url + endpoint, params=data, headers=headers)
+            except Exception as e:
+                logger.error('Connection error while making %s request to %s: %s', method, endpoint, e)
+                return None
+
+        elif method == 'DELETE':
+            try:
+                response = requests.delete(self._base_url + endpoint, params=data, headers=headers)
+            except Exception as e:
+                logger.error('Connection error while making %s request to %s: %s', method, endpoint, e)
+                return None
+
+        else:
+            raise ValueError()
+
+        if response.status_code == 200:
+            return response.json()
+        else:
+            logger.error('Error while making %s request to %s: %s (error code %s)',
+                         method, endpoint, response.json(), response.status_code)
+            return None
+
+        def get_contracts(self) -> typing.Dict[str, Contract]:
+
+            instruments = self._make_request('GET', '/api/v1/instrument/active', dict())
+
+            contracts = dict()
+
+            if instruments is not None:
+                for s in instruments:
+                    contracts[s['symbol']] = Contract(s, 'bitmex')
+
+        def get_balances(self) -> typing.Dict[str, Balance]:
+            data = dict()
+            data['currency'] = 'all'
+
+            margin_data = self._make_request('GET, /api/v1/user/margin', data)
+
+            balances = dict()
+
+            if margin_data is not None:  # if the request are successful
+                for a in margin_data:
+                    balances[a['currency']] = Balance(a, 'bitmex')

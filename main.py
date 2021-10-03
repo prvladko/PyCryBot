@@ -2,6 +2,7 @@ import tkinter as tk
 import logging
 
 from connectors.binance_futures import BinanceFuturesClient
+from connectors.bitmex import BitmexClient
 
 logger = logging.getLogger()
 
@@ -32,6 +33,8 @@ if __name__ == '__main__':  # statement will be executed only if the main module
 
     # candles = binance.get_historical_candles()
     # candles[-1].low
+
+    bitmex = BitmexClient('llCC7kI5cx2O8POBuKHQ_Sae', 'zezzQqyHUNw8wLNZym1VEsGZ4fbundC7rcCRBDp18BSXRfyJ', True)
 
     root = tk.Tk()  # main window of the bot
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)

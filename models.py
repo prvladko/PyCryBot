@@ -10,12 +10,13 @@ class Balance:
             self.margin_balance = float(balance_info['marginBalance'])
             self.wallet_balance = float(balance_info['walletBalance'])
             self.unrealized_pnl = float(balance_info['unrealizedProfit'])
+
         elif exchange == 'bitmex':
-            self.initial_margin = float(balance_info['initMargin']) * BITMEX_MULTIPLIER
-            self.maintenance_margin = float(balance_info['maintMargin']) * BITMEX_MULTIPLIER
-            self.margin_balance = float(balance_info['marginBalance']) * BITMEX_MULTIPLIER
-            self.wallet_balance = float(balance_info['walletBalance']) * BITMEX_MULTIPLIER
-            self.unrealized_pnl = float(balance_info['unrealisedPnl']) * BITMEX_MULTIPLIER
+            self.initial_margin = balance_info['initMargin'] * BITMEX_MULTIPLIER
+            self.maintenance_margin = balance_info['maintMargin'] * BITMEX_MULTIPLIER
+            self.margin_balance = balance_info['marginBalance'] * BITMEX_MULTIPLIER
+            self.wallet_balance = balance_info['walletBalance'] * BITMEX_MULTIPLIER
+            self.unrealized_pnl = balance_info['unrealisedPnl'] * BITMEX_MULTIPLIER
 
 class Candle:
     def __init__(self, candle_info: typing.Dict, exchange: str):
@@ -40,14 +41,15 @@ class Contract:
             self.symbol = contract_info['symbol']
             self.base_asset = contract_info['baseAsset']
             self.quote_asset = contract_info['quoteAsset']
-            self.price_decimals = contract_info['pricePrecision']
+            self.price_decimals = contract_info['pricePrecision'] #2
             self.quantity_decimals = contract_info['quantityPrecision']
-        elif exchange == 'bitmex':
+
+        elif exchange == 'bitmex':  # https://www.bitmex.com/api/explorer/#!/Instrument/Instrument_getActive
             self.symbol = contract_info['symbol']
-            self.base_asset = contract_info['baseAsset']
-            self.quote_asset = contract_info['quoteAsset']
-            self.price_decimals = contract_info['pricePrecision']
-            self.quantity_decimals = contract_info['quantityPrecision']
+            self.base_asset = contract_info['rootSymbol']
+            self.quote_asset = contract_info['quoteCurrency']
+            self.price_decimals = contract_info['tickSize'] # 0.01
+            self.quantity_decimals = contract_info['lotSize']
 
 class OrderStatus:
     def __init__(self, order_info: typing.Dict, exchange: str):
