@@ -34,14 +34,14 @@ if __name__ == '__main__':  # statement will be executed only if the main module
     # candles = binance.get_historical_candles()
     # candles[-1].low
 
-    bitmex = BitmexClient('llCC7kI5cx2O8POBuKHQ_Sae', 'zezzQqyHUNw8wLNZym1VEsGZ4fbundC7rcCRBDp18BSXRfyJ', True)
+    bitmex = BitmexClient('C4m9DZuY6dZ0QAoIEJnGQC7k', 'XU3-eqjn9hqbJnypcwYVCVjQZrNqB4Hy4AChIldetn_g3WN-', True)
 
     # print(bitmex.contracts['XBTUSD'].base_asset, bitmex.contracts['XBTUSD'].price_decimals)
     # print(bitmex.balances['XBt'].wallet_balance)  # Bitmex returns XBt (symbol of 'satoshi) instead of XBT (symbol of Bitcoin)
 
-    print(bitmex.place_order(bitmex.contracts['XBTUSD'], 'Limit', 40.4, 'Buy', 20000.49494338, 'GoodTillCancel'))
+    # print(bitmex.place_order(bitmex.contracts['XBTUSD'], 'Limit', 40.4, 'Buy', 20000.49494338, 'GoodTillCancel'))
 
-    # print(bitmex.place_order(bitmex.contracts['XBTUSD'], 'Limit', 50, 'Buy', price=20000, tif='GoodTillCancel'))
+    print(bitmex.place_order(bitmex.contracts['XBTUSD'], 'Limit', 50, 'Buy', price=20000, tif='GoodTillCancel'))
 
     root = tk.Tk()  # main win dow of the bot
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)

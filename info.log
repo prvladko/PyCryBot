@@ -912,3 +912,81 @@
 2021-10-03 21:22:38,088 INFO  :: Bitmex connection opened
 2021-10-03 21:22:38,135 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
 2021-10-03 21:22:38,229 INFO  :: Binance connection opened
+2021-10-03 21:41:34,858 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:41:35,655 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:41:35,968 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:41:35,999 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
+2021-10-03 21:41:36,093 INFO  :: Binance Websocket connection opened
+2021-10-03 21:42:28,921 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:42:30,043 INFO  :: Binance Websocket connection opened
+2021-10-03 21:42:43,749 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:42:44,968 INFO  :: Binance Websocket connection opened
+2021-10-03 21:43:02,308 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:43:03,074 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:43:03,465 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:43:03,465 INFO  :: Binance Websocket connection opened
+2021-10-03 21:43:30,168 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:43:30,824 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:43:31,136 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:43:31,168 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
+2021-10-03 21:43:31,277 INFO  :: Binance Websocket connection opened
+2021-10-03 21:44:12,403 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:44:13,215 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:44:13,512 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:44:13,559 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
+2021-10-03 21:44:13,653 INFO  :: Binance Websocket connection opened
+2021-10-03 21:45:55,562 ERROR  :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (error code 401)
+2021-10-03 21:45:55,562 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:45:55,982 ERROR  :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2021-10-03 21:45:56,279 ERROR  :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2021-10-03 21:45:56,294 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:45:56,669 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:45:56,748 INFO  :: Binance Websocket connection opened
+2021-10-03 21:46:33,735 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:46:34,422 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:46:34,703 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:46:34,735 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
+2021-10-03 21:46:34,844 INFO  :: Binance Websocket connection opened
+2021-10-03 21:51:19,562 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:51:19,969 ERROR  :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Signature not valid.', 'name': 'HTTPError'}} (error code 401)
+2021-10-03 21:51:20,281 ERROR  :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Signature not valid.', 'name': 'HTTPError'}} (error code 401)
+2021-10-03 21:51:20,281 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:51:20,578 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:51:20,703 INFO  :: Binance Websocket connection opened
+2021-10-03 21:52:04,229 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:52:04,557 ERROR  :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Signature not valid.', 'name': 'HTTPError'}} (error code 401)
+2021-10-03 21:52:04,869 ERROR  :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Signature not valid.', 'name': 'HTTPError'}} (error code 401)
+2021-10-03 21:52:04,869 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:52:05,150 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:52:05,307 INFO  :: Binance Websocket connection opened
+2021-10-03 21:52:57,836 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:52:58,617 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:52:58,899 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:52:58,930 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Invalid orderQty', 'name': 'ValidationError'}} (error code 400)
+2021-10-03 21:52:59,039 INFO  :: Binance Websocket connection opened
+2021-10-03 21:53:44,968 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:53:45,671 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:53:45,968 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:53:45,999 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Invalid orderQty', 'name': 'ValidationError'}} (error code 400)
+2021-10-03 21:53:46,109 INFO  :: Binance Websocket connection opened
+2021-10-03 21:55:18,760 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:55:19,557 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:55:19,838 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:55:19,869 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Invalid orderQty', 'name': 'ValidationError'}} (error code 400)
+2021-10-03 21:55:19,979 INFO  :: Binance Websocket connection opened
+2021-10-03 21:56:22,407 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:56:23,179 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:56:23,476 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:56:23,507 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Invalid orderQty', 'name': 'ValidationError'}} (error code 400)
+2021-10-03 21:56:24,320 INFO  :: Binance Websocket connection opened
+2021-10-03 22:02:45,558 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 22:02:45,980 ERROR  :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2021-10-03 22:02:46,277 ERROR  :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2021-10-03 22:02:46,277 INFO  :: Bitmex Client successfully initialized
+2021-10-03 22:02:46,558 INFO  :: Bitmex Websocket connection opened
+2021-10-03 22:02:46,683 INFO  :: Binance Websocket connection opened
+2021-10-03 22:03:55,326 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 22:03:56,122 INFO  :: Bitmex Client successfully initialized
+2021-10-03 22:03:56,419 INFO  :: Bitmex Websocket connection opened
+2021-10-03 22:03:56,466 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Invalid orderQty', 'name': 'ValidationError'}} (error code 400)
+2021-10-03 22:03:56,560 INFO  :: Binance Websocket connection opened
