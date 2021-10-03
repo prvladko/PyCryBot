@@ -65,3 +65,820 @@
 2021-10-03 18:00:48,628 INFO  :: Bitmex Client successfully initialized
 2021-10-03 18:00:48,942 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
 2021-10-03 18:00:49,595 INFO  :: Binance Websocket connection opened
+2021-10-03 18:10:25,911 ERROR  :: Error while making GET request to /fapi/v1/account: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."} (error code 400)
+2021-10-03 18:10:25,911 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 18:10:26,768 INFO  :: Bitmex Client successfully initialized
+2021-10-03 18:10:27,067 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
+2021-10-03 18:10:27,172 INFO  :: Binance Websocket connection opened
+2021-10-03 18:12:28,867 ERROR  :: Error while making GET request to /fapi/v1/account: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."} (error code 400)
+2021-10-03 18:12:28,867 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 18:12:30,072 INFO  :: Binance Websocket connection opened
+2021-10-03 18:13:18,013 INFO  :: Bitmex Client successfully initialized
+2021-10-03 18:13:18,310 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
+2021-10-03 18:14:23,077 ERROR  :: Error while making GET request to /fapi/v1/account: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."} (error code 400)
+2021-10-03 18:14:23,077 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 18:14:23,933 INFO  :: Bitmex Client successfully initialized
+2021-10-03 18:14:24,231 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
+2021-10-03 18:14:24,332 INFO  :: Binance Websocket connection opened
+2021-10-03 18:48:34,617 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 18:48:35,403 INFO  :: Bitmex Client successfully initialized
+2021-10-03 18:48:35,788 INFO  :: Binance Websocket connection opened
+2021-10-03 18:48:35,793 INFO  :: Bitmex Websocket connection opened
+2021-10-03 18:50:02,982 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 18:50:03,795 INFO  :: Bitmex Client successfully initialized
+2021-10-03 18:50:04,161 INFO  :: Binance Websocket connection opened
+2021-10-03 18:50:04,171 INFO  :: Bitmex Websocket connection opened
+2021-10-03 18:50:06,150 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,150 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,150 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,150 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,154 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,159 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,164 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,164 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,164 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,164 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,164 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,164 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,164 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,164 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,180 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,180 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,185 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,190 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,200 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,205 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,215 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,215 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,215 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,215 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,215 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,217 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,222 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,222 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,222 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,222 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,222 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,222 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,222 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,222 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,222 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,227 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,232 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,232 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,232 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,232 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,232 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,232 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:06,232 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:06,232 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,063 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,063 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,063 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,063 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,350 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,352 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,357 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,362 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,367 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,372 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,377 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,377 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,377 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,377 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,377 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,377 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:07,377 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:07,377 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,191 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,206 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,221 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,236 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,241 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,246 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,246 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,246 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,246 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,246 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,246 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,246 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,246 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,349 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,354 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,359 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,364 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,364 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,364 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,369 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,374 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,374 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,374 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,374 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:10,374 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001BAC4A48250>>: name 'sy' is not defined
+2021-10-03 18:50:10,374 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:19,278 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 18:50:19,957 INFO  :: Bitmex Client successfully initialized
+2021-10-03 18:50:20,340 INFO  :: Bitmex Websocket connection opened
+2021-10-03 18:50:20,355 INFO  :: Binance Websocket connection opened
+2021-10-03 18:50:23,627 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:23,627 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:24,052 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:24,057 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:24,057 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:24,057 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,161 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,166 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,171 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,176 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,176 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,181 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,186 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,191 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,196 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,201 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,211 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,216 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,221 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,226 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,231 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,241 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,245 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,351 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,351 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,356 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,361 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,366 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,371 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,376 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,376 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:25,376 ERROR  :: error from callback <bound method BitmexClient._on_message of <connectors.bitmex.BitmexClient object at 0x000001C3C1FC2E80>>: name 'sy' is not defined
+2021-10-03 18:50:25,381 ERROR  :: Bitmex connection error: name 'sy' is not defined
+2021-10-03 18:50:41,199 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 18:50:41,893 INFO  :: Bitmex Client successfully initialized
+2021-10-03 18:50:42,265 INFO  :: Bitmex Websocket connection opened
+2021-10-03 18:50:42,338 INFO  :: Binance Websocket connection opened
