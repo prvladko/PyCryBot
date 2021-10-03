@@ -1,6 +1,10 @@
 import typing
 
+import dateutil.parser
+import datetime
+
 BITMEX_MULTIPLIER = 0.00000001
+BITMEX_TF_MINUTES = {'1m': 1, '5m': 5, '1h': 60, '1d': 1440}
 
 class Balance:
     def __init__(self, balance_info: typing.Dict, exchange: str):
@@ -19,7 +23,7 @@ class Balance:
             self.unrealized_pnl = balance_info['unrealisedPnl'] * BITMEX_MULTIPLIER
 
 class Candle:
-    def __init__(self, candle_info: typing.Dict, exchange: str):
+    def __init__(self, candle_info: typing.Dict, timeframe, exchange: str):
         if exchange == 'binance':
             self.timestamp = candle_info[0]
             self.open = float(candle_info[1])
@@ -29,7 +33,10 @@ class Candle:
             self.volume =  float(candle_info[5])
 
         elif exchange == 'bitmex':  # https://www.bitmex.com/api/explorer/#!/Trade/Trade_getBucketed
-            self.timestamp = candle_info['timestamp']
+            self.timestamp = dateutil.parser.isoparse(candle_info['timestamp'])
+            self.timestamp = self.timestamp - datetime.timedelta(minutes=BITMEX_TF_MINUTES[timeframe])
+            self.timestamp = int(self.timestamp.timestamp() * 1000)
+            print(candle_info['timestamp'], dateutil.parser.isoparse(candle_info['timestamp']), self.timestamp)
             self.open = candle_info['open']
             self.high = candle_info['high']
             self.low = candle_info['low']

@@ -39,6 +39,8 @@ if __name__ == '__main__':  # statement will be executed only if the main module
     # print(bitmex.contracts['XBTUSD'].base_asset, bitmex.contracts['XBTUSD'].price_decimals)
     # print(bitmex.balances['XBt'].wallet_balance)  # Bitmex returns XBt (symbol of 'satoshi) instead of XBT (symbol of Bitcoin)
 
+    bitmex.get_historical_candles(bitmex.contracts['XBTUSD'], '1h')
+
     # print(bitmex.place_order(bitmex.contracts['XBTUSD'], 'Limit', 50, 'Buy', price=20000, tif='GoodTillCancel'))
 
     root = tk.Tk()  # main win dow of the bot
