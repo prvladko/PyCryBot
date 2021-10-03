@@ -35,8 +35,9 @@ class Candle:
         elif exchange == 'bitmex':  # https://www.bitmex.com/api/explorer/#!/Trade/Trade_getBucketed
             self.timestamp = dateutil.parser.isoparse(candle_info['timestamp'])
             self.timestamp = self.timestamp - datetime.timedelta(minutes=BITMEX_TF_MINUTES[timeframe])
+            print(self.timestamp)
             self.timestamp = int(self.timestamp.timestamp() * 1000)
-            print(candle_info['timestamp'], dateutil.parser.isoparse(candle_info['timestamp']), self.timestamp)
+            # print(candle_info['timestamp'], dateutil.parser.isoparse(candle_info['timestamp']), self.timestamp)
             self.open = candle_info['open']
             self.high = candle_info['high']
             self.low = candle_info['low']

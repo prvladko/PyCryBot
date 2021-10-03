@@ -125,8 +125,8 @@ class BitmexClient:
         candles = []
 
         if raw_candles is not None:
-            for c in raw_candles:
-                candles.append(Candle(c, 'bitmex'))
+            for c in reversed(raw_candles):
+                candles.append(Candle(c, timeframe, 'bitmex'))
         #candles[-1].low
 
         return candles

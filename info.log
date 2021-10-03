@@ -882,3 +882,11 @@
 2021-10-03 18:50:41,893 INFO  :: Bitmex Client successfully initialized
 2021-10-03 18:50:42,265 INFO  :: Bitmex Websocket connection opened
 2021-10-03 18:50:42,338 INFO  :: Binance Websocket connection opened
+2021-10-03 20:14:20,586 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 20:14:21,401 INFO  :: Bitmex Client successfully initialized
+2021-10-03 20:14:21,680 INFO  :: Bitmex Websocket connection opened
+2021-10-03 20:14:21,754 INFO  :: Binance Websocket connection opened
+2021-10-03 20:28:05,196 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 20:28:06,009 INFO  :: Bitmex Client successfully initialized
+2021-10-03 20:28:06,294 INFO  :: Bitmex Websocket connection opened
+2021-10-03 20:28:06,359 INFO  :: Binance Websocket connection opened
