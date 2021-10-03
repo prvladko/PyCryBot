@@ -45,7 +45,7 @@ class Candle:
             self.volume = candle_info['volume']
 
 def tick_to_decimals(tick_size: float) -> int:
-    tick_size_str = '{0:.8f'.format(tick_size)
+    tick_size_str = '{0:.8f}'.format(tick_size)
     while tick_size_str[-1] == '0':
         tick_size_str = tick_size_str[:-1]
 

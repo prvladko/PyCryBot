@@ -890,3 +890,10 @@
 2021-10-03 20:28:06,009 INFO  :: Bitmex Client successfully initialized
 2021-10-03 20:28:06,294 INFO  :: Bitmex Websocket connection opened
 2021-10-03 20:28:06,359 INFO  :: Binance Websocket connection opened
+2021-10-03 21:09:37,462 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:09:38,691 INFO  :: Binance Websocket connection opened
+2021-10-03 21:14:02,835 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 21:14:03,689 INFO  :: Bitmex Client successfully initialized
+2021-10-03 21:14:03,976 INFO  :: Bitmex Websocket connection opened
+2021-10-03 21:14:04,017 INFO  :: Binance Websocket connection opened
+2021-10-03 21:14:04,026 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Access Denied', 'name': 'HTTPError'}} (error code 403)
