@@ -238,21 +238,3 @@ class BitmexClient:
         except Exception as e:
             logger.error('Websocket error while subscribing to %s: %s', topic, e)
             return None
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
