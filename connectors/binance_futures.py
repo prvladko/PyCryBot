@@ -132,7 +132,7 @@ class BinanceFuturesClient:
 
         if account_data is not None:
             for a in account_data['assets']:
-                balances[a['asset']] = Balance(a)
+                balances[a['asset']] = Balance(a, 'binance')
         #print(balances['USDT'].wallet_balance)
 
         return balances

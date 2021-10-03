@@ -36,5 +36,8 @@ if __name__ == '__main__':  # statement will be executed only if the main module
 
     bitmex = BitmexClient('llCC7kI5cx2O8POBuKHQ_Sae', 'zezzQqyHUNw8wLNZym1VEsGZ4fbundC7rcCRBDp18BSXRfyJ', True)
 
+    print(bitmex.contracts['XBTUSD'].base_asset, bitmex.contracts['XBTUSD'].price_decimals)
+    print(bitmex.balances['XBt'].wallet_balance)  # Bitmex returns XBt (symbol of 'satoshi) instead of XBT (symbol of Bitcoin)
+
     root = tk.Tk()  # main window of the bot
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)

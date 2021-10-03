@@ -37,8 +37,8 @@ class BitmexClient:
 
         self.prices = dict()
 
-        t = threading.Thread(target=self._start_ws)
-        t.start()
+        # t = threading.Thread(target=self._start_ws)
+        # t.start()
 
         logger.info('Bitmex Client successfully initialized')
 
@@ -50,7 +50,7 @@ class BitmexClient:
     def _make_request(self, method: str, endpoint: str, data: typing.Dict):  # doesn't return the same output, so can be None o JSON object, not going to type it with '->'
 
         headers = dict()
-        expires = str(int(time.time())) + 5)
+        expires = str(int(time.time()) + 5)
         headers['api-expires'] = expires
         headers['api-key'] = self._public_key
         headers['api-signature'] = self._generate_signature(method, endpoint, expires, data)
@@ -86,24 +86,28 @@ class BitmexClient:
                          method, endpoint, response.json(), response.status_code)
             return None
 
-        def get_contracts(self) -> typing.Dict[str, Contract]:
+    def get_contracts(self) -> typing.Dict[str, Contract]:
 
-            instruments = self._make_request('GET', '/api/v1/instrument/active', dict())
+        instruments = self._make_request('GET', '/api/v1/instrument/active', dict())
 
-            contracts = dict()
+        contracts = dict()
 
-            if instruments is not None:
-                for s in instruments:
-                    contracts[s['symbol']] = Contract(s, 'bitmex')
+        if instruments is not None:
+            for s in instruments:
+                contracts[s['symbol']] = Contract(s, 'bitmex')
 
-        def get_balances(self) -> typing.Dict[str, Balance]:
-            data = dict()
-            data['currency'] = 'all'
+        return contracts
 
-            margin_data = self._make_request('GET, /api/v1/user/margin', data)
+    def get_balances(self) -> typing.Dict[str, Balance]:
+        data = dict()
+        data['currency'] = 'all'
 
-            balances = dict()
+        margin_data = self._make_request('GET', '/api/v1/user/margin', data)
 
-            if margin_data is not None:  # if the request are successful
-                for a in margin_data:
-                    balances[a['currency']] = Balance(a, 'bitmex')
+        balances = dict()
+
+        if margin_data is not None:  # if the request are successful
+            for a in margin_data:
+                balances[a['currency']] = Balance(a, 'bitmex')
+
+        return balances
