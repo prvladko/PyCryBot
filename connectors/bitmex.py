@@ -136,11 +136,11 @@ class BitmexClient:
 
         data['symbol'] = contract.symbol
         data['side'] = side.capitalize()  # 'sell' -> 'Sell'
-        data['orderQty'] = quantity
+        data['orderQty'] = round(quantity / contract.lot_size) * contract.lot_size
         data['ordType'] = order_type.capitalize()
 
         if price is not None:
-            data['price'] = price
+            data['price'] = round(price / contract.tick_size) * contract.tick_size
 
         if tif is not None:
             data['timeInForce'] = tif
@@ -150,7 +150,7 @@ class BitmexClient:
 
         order_status = self._make_request('POST', '/api/v1/order', data)
 
-        if order_status is not None:  # 'is not None' - possible mistake
+        if order_status is not None:  # was a mistake 'is None'
             order_status = OrderStatus(order_status, 'bitmex')
 
         return order_status
