@@ -77,7 +77,7 @@ class BinanceFuturesClient:
         else:
             logger.error('Error while making %s request to %s: %s (error code %s)',
                          method, endpoint, response.json(), response.status_code)
-            return None  #
+            return None
 
     def get_contracts(self) -> typing.Dict[str, Contract]:  # returns a specified dictionary with str as keys & Contract object as values
         exchange_info = self._make_request('GET', '/fapi/v1/exchangeInfo', dict())
