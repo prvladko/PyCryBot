@@ -1000,3 +1000,46 @@
 2021-10-03 22:07:35,075 INFO  :: Bitmex Websocket connection opened
 2021-10-03 22:07:35,184 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Invalid orderQty', 'name': 'ValidationError'}} (error code 400)
 2021-10-03 22:07:35,278 INFO  :: Binance Websocket connection opened
+2021-10-04 22:02:13,832 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:02:14,672 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:02:14,958 INFO  :: Bitmex Websocket connection opened
+2021-10-04 22:02:15,047 INFO  :: Binance Websocket connection opened
+2021-10-04 22:02:54,387 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:02:55,086 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:02:55,370 INFO  :: Bitmex Websocket connection opened
+2021-10-04 22:02:55,502 INFO  :: Binance Websocket connection opened
+2021-10-04 22:03:10,438 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:03:11,169 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:03:11,457 INFO  :: Bitmex Websocket connection opened
+2021-10-04 22:03:11,590 INFO  :: Binance Websocket connection opened
+2021-10-04 22:03:24,551 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:03:26,532 INFO  :: Binance Websocket connection opened
+2021-10-04 22:04:26,497 ERROR  :: Error while making GET request to /fapi/v1/account: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."} (error code 400)
+2021-10-04 22:04:26,502 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:04:27,669 INFO  :: Binance Websocket connection opened
+2021-10-04 22:06:41,173 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:06:42,003 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:06:42,316 INFO  :: Bitmex Websocket connection opened
+2021-10-04 22:06:42,348 INFO  :: Binance Websocket connection opened
+2021-10-04 22:08:39,373 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:08:41,126 INFO  :: Binance Websocket connection opened
+2021-10-04 22:09:06,486 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:09:07,247 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:09:07,624 INFO  :: Binance Websocket connection opened
+2021-10-04 22:09:07,643 INFO  :: Bitmex Websocket connection opened
+2021-10-04 22:10:14,048 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:10:14,843 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:10:15,238 INFO  :: Binance Websocket connection opened
+2021-10-04 22:10:15,243 INFO  :: Bitmex Websocket connection opened
+2021-10-04 22:14:51,409 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:14:52,239 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:14:52,631 INFO  :: Binance Websocket connection opened
+2021-10-04 22:14:52,631 INFO  :: Bitmex Websocket connection opened
+2021-10-04 22:15:07,809 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:15:08,498 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:15:08,883 INFO  :: Bitmex Websocket connection opened
+2021-10-04 22:15:08,935 INFO  :: Binance Websocket connection opened
+2021-10-04 22:15:20,483 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:15:21,176 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:15:21,561 INFO  :: Bitmex Websocket connection opened
+2021-10-04 22:15:21,609 INFO  :: Binance Websocket connection opened
