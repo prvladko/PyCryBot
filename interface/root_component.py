@@ -19,3 +19,5 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
 
         self._logging_frame = Logging(self._left_frame, bg=BG_COLOR)
         self._logging_frame.pack(side=tk.TOP)
+
+        self._logging_frame.add_log('This is test message')
