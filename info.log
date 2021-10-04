@@ -1043,3 +1043,7 @@
 2021-10-04 22:15:21,176 INFO  :: Bitmex Client successfully initialized
 2021-10-04 22:15:21,561 INFO  :: Bitmex Websocket connection opened
 2021-10-04 22:15:21,609 INFO  :: Binance Websocket connection opened
+2021-10-04 22:34:44,338 INFO  :: Binance Futures Client is successfully initialized
+2021-10-04 22:34:45,143 INFO  :: Bitmex Client successfully initialized
+2021-10-04 22:34:45,514 INFO  :: Binance Websocket connection opened
+2021-10-04 22:34:45,529 INFO  :: Bitmex Websocket connection opened
