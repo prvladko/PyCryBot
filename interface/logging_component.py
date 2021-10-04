@@ -1,4 +1,5 @@
 import tkinter as tk
+from datetime import datetime
 
 from interface.styling import  *
 
@@ -14,5 +15,5 @@ class Logging(tk.Frame):
 
     def add_log(self, message: str):
         self.logging_text.configure(state=tk.NORMAL)
-        self.logging_text.insert('1.0', message + '\n')  # text message | '1.0' means this log appear on a new line
+        self.logging_text.insert('1.0', datetime.utcnow().strftime('%a %H:%M:%S ::') + message + '\n')  # text message | '1.0' means this log appear on a new line
         self.logging_text.configure(state=tk.DISABLED)

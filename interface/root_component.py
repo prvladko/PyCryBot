@@ -1,4 +1,5 @@
 import tkinter as tk
+import time
 
 from interface.styling import *
 
@@ -21,3 +22,5 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
         self._logging_frame.pack(side=tk.TOP)
 
         self._logging_frame.add_log('This is test message')
+        time.sleep(2)
+        self._logging_frame.add_log('This is another test message')
