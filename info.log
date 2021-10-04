@@ -990,3 +990,13 @@
 2021-10-03 22:03:56,419 INFO  :: Bitmex Websocket connection opened
 2021-10-03 22:03:56,466 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Invalid orderQty', 'name': 'ValidationError'}} (error code 400)
 2021-10-03 22:03:56,560 INFO  :: Binance Websocket connection opened
+2021-10-03 22:07:14,430 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 22:07:15,274 INFO  :: Bitmex Client successfully initialized
+2021-10-03 22:07:15,555 INFO  :: Bitmex Websocket connection opened
+2021-10-03 22:07:15,602 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Invalid orderQty', 'name': 'ValidationError'}} (error code 400)
+2021-10-03 22:07:15,711 INFO  :: Binance Websocket connection opened
+2021-10-03 22:07:34,106 INFO  :: Binance Futures Client is successfully initialized
+2021-10-03 22:07:34,794 INFO  :: Bitmex Client successfully initialized
+2021-10-03 22:07:35,075 INFO  :: Bitmex Websocket connection opened
+2021-10-03 22:07:35,184 ERROR  :: Error while making POST request to /api/v1/order: {'error': {'message': 'Invalid orderQty', 'name': 'ValidationError'}} (error code 400)
+2021-10-03 22:07:35,278 INFO  :: Binance Websocket connection opened

@@ -4,6 +4,8 @@ import logging
 from connectors.binance_futures import BinanceFuturesClient
 from connectors.bitmex import BitmexClient
 
+from interface.root_component import Root
+
 logger = logging.getLogger()
 
 logger.setLevel(
@@ -43,5 +45,5 @@ if __name__ == '__main__':  # statement will be executed only if the main module
 
     print(bitmex.place_order(bitmex.contracts['XBTUSD'], 'Limit', 50, 'Buy', price=20000, tif='GoodTillCancel'))
 
-    root = tk.Tk()  # main win dow of the bot
+    root = Root  # main win dow of the bot
     root.mainloop()  # blocking func that prevent program from terminating ('event loop' func - wait for action from user)
