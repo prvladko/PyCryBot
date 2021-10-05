@@ -1066,3 +1066,8 @@
 2021-10-05 21:18:26,293 INFO  :: Binance Websocket connection opened
 2021-10-05 21:18:29,757 INFO  :: Bitmex Client successfully initialized
 2021-10-05 21:18:32,359 INFO  :: Bitmex Websocket connection opened
+2021-10-05 21:23:12,490 ERROR  :: Error while making GET request to /fapi/v1/account: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."} (error code 400)
+2021-10-05 21:23:12,493 INFO  :: Binance Futures Client is successfully initialized
+2021-10-05 21:23:13,274 INFO  :: Bitmex Client successfully initialized
+2021-10-05 21:23:13,690 INFO  :: Bitmex Websocket connection opened
+2021-10-05 21:23:13,703 INFO  :: Binance Websocket connection opened
