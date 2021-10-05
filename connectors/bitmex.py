@@ -18,7 +18,9 @@ from models import *
 logger = logging.getLogger()
 # 017 Bitmex - REST API & Authentication---
 class BitmexClient:
-    def __init__(self, public_key: str, secret_key: str, testnet: bool):
+    def __init__(self, root, public_key: str, secret_key: str, testnet: bool):
+
+        self.root = root
 
         if testnet:
             self._base_url = 'https://testnet.bitmex.com'
@@ -223,6 +225,8 @@ class BitmexClient:
                         self.prices[symbol]['ask'] = d['askPrice']
 
                     # print(symbol, self.prices[symbol])  # for testing
+
+                    # self.root._logging_frame.add_log(str(self.prices[symbol]['bid']))  # for test. Doesn't work as well
 
     def subscribe_channel(self, topic: str):
         data = dict()
