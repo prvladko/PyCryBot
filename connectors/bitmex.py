@@ -44,7 +44,7 @@ class BitmexClient:
 
         logger.info('Bitmex Client successfully initialized')
 
-    def _add_log(self, msg):
+    def _add_log(self, msg: str):
         logger.info(('%s', msg))
         self.logs.append({'log': msg, 'displayed': False})
 
@@ -227,6 +227,9 @@ class BitmexClient:
                         self.prices[symbol]['bid'] = d['bidPrice']
                     if 'askPrice' in d:
                         self.prices[symbol]['ask'] = d['askPrice']
+
+                    if symbol == 'XBTUSD':
+                        self._add_log(symbol + ' ' + str(self.prices[symbol]['bid']) + ' / ' + str(self.prices[symbol]['ask']))
 
                     # print(symbol, self.prices[symbol])  # for testing
 

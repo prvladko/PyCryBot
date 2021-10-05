@@ -46,7 +46,7 @@ class BinanceFuturesClient:
 
         logger.info('Binance Futures Client is successfully initialized')
 
-    def _add_log(self, msg):
+    def _add_log(self, msg: str):
         logger.info(('%s', msg))
         self.logs.append({'log': msg, 'displayed': False})
 
