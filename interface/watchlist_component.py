@@ -36,10 +36,15 @@ class Watchlist(tk.Frame):
 
     def _add_binance_symbol(self, event):
         symbol = event.widget.get()
+        self._add_symbol(symbol, 'Binance')
+        event.widget.delete(0, tk.END)
 
     def _add_bitmex_symbol(self, event):
         symbol = event.widget.get()
+        self._add_symbol(symbol, 'Bitmex')
+        event.widget.delete(0, tk.END)
 
+    def _add_symbol(self, symbol: str, exchange: str):
 
-
+        return
 
