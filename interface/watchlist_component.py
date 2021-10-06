@@ -17,6 +17,7 @@ class Watchlist(tk.Frame):
 
         self._binance_entry = tk.Entry(self._commands_frame, fg=FG_COLOR, justify=tk.CENTER, insertbackground=FG_COLOR,
                                        bg=BG_COLOR2)  # color of the cursor of the entry widget
+        self._binance_entry.grid('<Return>', self._add_binance_symbol)
         self._binance_entry.grid(row=1, column=0)
 
         self._bitmex_label = tk.Label(self._commands_frame, text='Bitmex', bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT)
@@ -31,3 +32,13 @@ class Watchlist(tk.Frame):
         for idx, h in enumerate(self._headers):
             header = tk.Label(self._table_frame, text=h.capitalize(), bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT)
             header.grid(row=0, column=idx)
+
+    def _add_binance_symbol(selfself, event):
+        symbol = event.widget.get()
+
+    def _add_bitmex_symbol(selfself, event):
+        symbol = event.widget.get()
+
+
+
+
