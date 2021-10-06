@@ -1,10 +1,19 @@
 import tkinter as tk
+import typing
+
+from models import *
 
 from interface.styling import *
 
 class Watchlist(tk.Frame):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, binance_contracts: typing.Dict[str, Contract], bitmex_contracts: typing.Dict[str, Contract],
+                 *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+        self.binance_symbols = list(binance_contracts.keys())
+        self.bitmex_symbols = list(bitmex_contracts.keys())
+
+        print(self.binance_symbols)
 
         self._commands_frame = tk.Frame(self, bg=BG_COLOR)
         self._commands_frame.pack(side=tk.TOP)
@@ -36,13 +45,17 @@ class Watchlist(tk.Frame):
 
     def _add_binance_symbol(self, event):
         symbol = event.widget.get()
-        self._add_symbol(symbol, 'Binance')
-        event.widget.delete(0, tk.END)
+
+        if symbol in self.binance_symbols:
+            self._add_symbol(symbol, 'Binance')
+            event.widget.delete(0, tk.END)
 
     def _add_bitmex_symbol(self, event):
         symbol = event.widget.get()
-        self._add_symbol(symbol, 'Bitmex')
-        event.widget.delete(0, tk.END)
+
+        if symbol in self.bitmex_symbols:
+            self._add_symbol(symbol, 'Bitmex')
+            event.widget.delete(0, tk.END)
 
     def _add_symbol(self, symbol: str, exchange: str):
 
