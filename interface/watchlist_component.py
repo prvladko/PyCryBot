@@ -37,11 +37,18 @@ class Watchlist(tk.Frame):
         self._bitmex_entry.bind('<Return>', self._add_bitmex_symbol)
         self._bitmex_entry.grid(row=1, column=1)
 
+        self.body_widgets = dict()
+
         self._headers = ['symbol', 'exchange', 'bid', 'ask']
 
         for idx, h in enumerate(self._headers):
             header = tk.Label(self._table_frame, text=h.capitalize(), bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT)
             header.grid(row=0, column=idx)
+
+        for h in self._headers:
+            self.body_widgets[h] = dict()
+
+        self.body_widgets['bid']
 
     def _add_binance_symbol(self, event):
         symbol = event.widget.get()
