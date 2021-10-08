@@ -47,6 +47,8 @@ class Watchlist(tk.Frame):
 
         for h in self._headers:
             self.body_widgets[h] = dict()
+            if h in ['bid', 'ask']:
+                self.body_widgets[h + '_var'] = dict()
 
         self._body_index = 1
 
@@ -78,11 +80,18 @@ class Watchlist(tk.Frame):
                                                         font=GLOBAL_FONT)
         self.body_widgets['exchange'][b_index].grid(row=b_index, column=1)
 
-        self.body_widgets['bid'][b_index] = tk.Label(self._table_frame, textvariable=, bg=BG_COLOR, fg=FG_COLOR2,
-                                                          font=GLOBAL_FONT)
+        self.body_widgets['bid_var'][b_index] = tk.StringVar()
+        self.body_widgets['bid'][b_index] = tk.Label(self._table_frame,
+                                                     textvariable=self.body_widgets['bid_var'][b_index],
+                                                     bg=BG_COLOR, fg=FG_COLOR2, font=GLOBAL_FONT)
         self.body_widgets['bid'][b_index].grid(row=b_index, column=2)
 
-        self.body_widgets['ask'][b_index] = tk.Label(self._table_frame, textvariable=, bg=BG_COLOR, fg=FG_COLOR2,
-                                                          font=GLOBAL_FONT)
+        self.body_widgets['ask_var'][b_index] = tk.StringVar()
+        self.body_widgets['ask'][b_index] = tk.Label(self._table_frame,
+                                                     textvariable=self.body_widgets['ask_var'][b_index],
+                                                     bg=BG_COLOR, fg=FG_COLOR2, font=GLOBAL_FONT)
         self.body_widgets['ask'][b_index].grid(row=b_index, column=3)
+
+        # bid_var = tk.StringVar()
+        # bid_var.set(20.38)
 
