@@ -48,7 +48,9 @@ class Watchlist(tk.Frame):
         for h in self._headers:
             self.body_widgets[h] = dict()
 
-        self.body_widgets['bid'][3]  # specific row with it's id
+        self._body_index = 1
+
+        # self.body_widgets['bid'][3]  # specific row with it's id
 
     def _add_binance_symbol(self, event):
         symbol = event.widget.get()
@@ -65,6 +67,9 @@ class Watchlist(tk.Frame):
             event.widget.delete(0, tk.END)
 
     def _add_symbol(self, symbol: str, exchange: str):
+
+        b_index = self._body_index
+
 
         return
 
