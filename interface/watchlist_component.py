@@ -92,6 +92,8 @@ class Watchlist(tk.Frame):
                                                      bg=BG_COLOR, fg=FG_COLOR2, font=GLOBAL_FONT)
         self.body_widgets['ask'][b_index].grid(row=b_index, column=3)
 
+
         # bid_var = tk.StringVar()
         # bid_var.set(20.38)
 
+        self._body_index += 1
