@@ -70,6 +70,19 @@ class Watchlist(tk.Frame):
 
         b_index = self._body_index
 
+        self.body_widgets['symbol'][b_index] = tk.Label(self._table_frame, text=symbol, bg=BG_COLOR, fg=FG_COLOR2,
+                                                        font=GLOBAL_FONT)
+        self.body_widgets['symbol'][b_index].grid(row=b_index, column=0)
 
-        return
+        self.body_widgets['exchange'][b_index] = tk.Label(self._table_frame, text=exchange, bg=BG_COLOR, fg=FG_COLOR2,
+                                                        font=GLOBAL_FONT)
+        self.body_widgets['exchange'][b_index].grid(row=b_index, column=1)
+
+        self.body_widgets['bid'][b_index] = tk.Label(self._table_frame, textvariable=, bg=BG_COLOR, fg=FG_COLOR2,
+                                                          font=GLOBAL_FONT)
+        self.body_widgets['bid'][b_index].grid(row=b_index, column=2)
+
+        self.body_widgets['ask'][b_index] = tk.Label(self._table_frame, textvariable=, bg=BG_COLOR, fg=FG_COLOR2,
+                                                          font=GLOBAL_FONT)
+        self.body_widgets['ask'][b_index].grid(row=b_index, column=3)
 
