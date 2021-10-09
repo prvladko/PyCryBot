@@ -38,6 +38,8 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
 
     def _update_ui(self):
 
+        # Logs
+
         for log in self.bitmex.logs:
             if not log['displayed']:
                 self._logging_frame.add_log(log['log'])
@@ -47,5 +49,20 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
             if not log['displayed']:
                 self._logging_frame.add_log(log['log'])
                 log['displayed'] = True
+
+        # Watchlist prices
+
+        for key, value in self._watchlist_frame.body_widgets['symbol'].items():
+
+            symbol = self._watchlist_frame.body_widgets['symbol'][key].cget('text')
+            exchange = self._watchlist_frame.body_widgets['exchange'][key].cget('text')
+
+            if exhcange == 'Binance':
+                if symbol not in self.binance.contracts:
+                    continue
+
+                if symbol not in self.binance.prices:
+
+
 
         self.after(1500, self._update_ui)
