@@ -1652,3 +1652,17 @@
 2021-10-09 11:55:34,134 INFO  :: ('%s', 'XBTUSD 54709 / 54709.5')
 2021-10-09 11:55:35,943 INFO  :: ('%s', 'XBTUSD 54709 / 54709.5')
 2021-10-09 11:55:41,941 INFO  :: ('%s', 'XBTUSD 54709 / 54709.5')
+2021-10-09 11:57:10,806 INFO  :: Binance Futures Client is successfully initialized
+2021-10-09 11:57:11,586 INFO  :: Bitmex Client successfully initialized
+2021-10-09 11:57:11,963 INFO  :: Binance Websocket connection opened
+2021-10-09 11:57:11,970 INFO  :: Bitmex Websocket connection opened
+2021-10-09 11:57:19,744 INFO  :: Binance Futures Client is successfully initialized
+2021-10-09 11:57:20,445 INFO  :: Bitmex Client successfully initialized
+2021-10-09 11:57:20,830 INFO  :: Bitmex Websocket connection opened
+2021-10-09 11:57:20,869 INFO  :: Binance Websocket connection opened
+2021-10-09 11:57:24,198 INFO  :: ('%s', 'XBTUSD 54685 / 54715.5')
+2021-10-09 11:57:26,935 INFO  :: ('%s', 'XBTUSD 54685 / 54715.5')
+2021-10-09 11:57:30,662 INFO  :: ('%s', 'XBTUSD 54685 / 54715.5')
+2021-10-09 11:57:31,432 INFO  :: ('%s', 'XBTUSD 54685 / 54715.5')
+2021-10-09 11:57:34,138 INFO  :: ('%s', 'XBTUSD 54685 / 54715.5')
+2021-10-09 11:57:35,932 INFO  :: ('%s', 'XBTUSD 54685 / 54715.5')

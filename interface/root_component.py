@@ -65,6 +65,8 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
                     self.binance.get_bid_ask(self.binance.contracts[symbol])
                     continue
 
+                precision = self.binance.contracts[symbol].price_decimals
+
                 prices = self.binance.prices[symbol]
 
             elif exchange == 'Bitmex':
@@ -74,15 +76,19 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
                 if symbol not in self.bitmex.prices:
                     continue
 
+                precision = self.bitmex.contracts[symbol].price_decimals
+
                 prices = self.bitmex.prices[symbol]
 
             else:
                 continue
 
             if prices['bid'] is not None:
-                self._watchlist_frame.body_widgets['bid_var'][key].set(prices['bid'])
+                price_str = '{0:.{prec}f'.format(prices['bid'], prec=precision)
+                self._watchlist_frame.body_widgets['bid_var'][key].set(price_str)
             if prices['ask'] is not None:
-                self._watchlist_frame.body_widgets['ask_var'][key].set(prices['ask'])
+                price_str = '{0:.{prec}f'.format(prices['ask'], prec=precision)
+                self._watchlist_frame.body_widgets['ask_var'][key].set(price_str)
 
 
 
