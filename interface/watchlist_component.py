@@ -54,6 +54,11 @@ class Watchlist(tk.Frame):
 
         # self.body_widgets['bid'][3]  # specific row with it's id
 
+    def _remove_symbol(self, b_index: int):
+        for h in self._headers:
+            self.body_widgets[h][b_index].grid_forget()
+
+
     def _add_binance_symbol(self, event):
         symbol = event.widget.get()
 
