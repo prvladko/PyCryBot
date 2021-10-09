@@ -1,6 +1,6 @@
 import tkinter as tk
 import typing
-import time
+
 from models import *
 
 from interface.styling import *
@@ -78,8 +78,6 @@ class Watchlist(tk.Frame):
     def _add_symbol(self, symbol: str, exchange: str):
 
         b_index = self._body_index
-
-        time.sleep(3)
 
         self.body_widgets['symbol'][b_index] = tk.Label(self._table_frame, text=symbol, bg=BG_COLOR, fg=FG_COLOR2,
                                                         font=GLOBAL_FONT)
