@@ -62,6 +62,10 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
                     continue
 
                 if symbol not in self.binance.prices:
+                    self.binance.get_bid_ask(self.binance.contracts[symbol])\
+                    continue
+
+                prices = self.binance.prices(symbol)
 
 
 
