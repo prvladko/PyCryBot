@@ -90,6 +90,4 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
 
 
 
-
-
         self.after(1500, self._update_ui)
