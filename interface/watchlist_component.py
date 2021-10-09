@@ -5,6 +5,7 @@ from models import *
 
 from interface.styling import *
 
+
 class Watchlist(tk.Frame):
     def __init__(self, binance_contracts: typing.Dict[str, Contract], bitmex_contracts: typing.Dict[str, Contract],
                  *args, **kwargs):
@@ -33,7 +34,7 @@ class Watchlist(tk.Frame):
         self._binance_label.grid(row=0, column=1)
 
         self._bitmex_entry = tk.Entry(self._commands_frame, fg=FG_COLOR, justify=tk.CENTER, insertbackground=FG_COLOR,
-                                       bg=BG_COLOR2)
+                                      bg=BG_COLOR2)
         self._bitmex_entry.bind('<Return>', self._add_bitmex_symbol)
         self._bitmex_entry.grid(row=1, column=1)
 
@@ -60,7 +61,6 @@ class Watchlist(tk.Frame):
             self.body_widgets[h][b_index].grid_forget()
             del self.body_widgets[h][b_index]
 
-
     def _add_binance_symbol(self, event):
         symbol = event.widget.get()
 
@@ -84,7 +84,7 @@ class Watchlist(tk.Frame):
         self.body_widgets['symbol'][b_index].grid(row=b_index, column=0)
 
         self.body_widgets['exchange'][b_index] = tk.Label(self._table_frame, text=exchange, bg=BG_COLOR, fg=FG_COLOR2,
-                                                        font=GLOBAL_FONT)
+                                                          font=GLOBAL_FONT)
         self.body_widgets['exchange'][b_index].grid(row=b_index, column=1)
 
         self.body_widgets['bid_var'][b_index] = tk.StringVar()
@@ -101,7 +101,8 @@ class Watchlist(tk.Frame):
 
         self.body_widgets['remove'][b_index] = tk.Button(self._table_frame, text='X',
                                                          bg='darkred', fg=FG_COLOR, font=GLOBAL_FONT,
-                                                         command=self._remove_symbol())
+                                                         command=lambda: self._remove_symbol(b_index))
+        # ^^^ lambda necessary only when we have a callback method that must take arguments ^^^
         self.body_widgets['remove'][b_index].grid(row=b_index, column=4)
 
         # bid_var = tk.StringVar()
