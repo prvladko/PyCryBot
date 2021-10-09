@@ -51,9 +51,11 @@ class BinanceFuturesClient:
         self.logs.append({'log': msg, 'displayed': False})
 
     def _generate_signature(self, data: typing.Dict) -> str:
-        return hmac.new(self._secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()  # convert from string to bit code
+        return hmac.new(self._secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()
+        # ^^^convert from string to bit code^^^
 
-    def _make_request(self, method: str, endpoint: str, data: typing.Dict):  # doesn't return the same output, so can be None o JSON object, not going to type it with '->'
+    def _make_request(self, method: str, endpoint: str, data: typing.Dict):  # doesn't return the same output,
+        # ^^^so can be None o JSON object, not going to type it with '->'
         if method == 'GET':
             try:
                 response = requests.get(self._base_url + endpoint, params=data, headers=self._headers)
@@ -92,8 +94,8 @@ class BinanceFuturesClient:
 
         if exchange_info is not None:
             for contract_data in exchange_info['symbols']:
-                contracts[contract_data['pair']] = Contract(contract_data, 'binance')
-        #contracts['BTCUSDT'].price_decimals  # is just for testing
+                contracts[contract_data['symbol']] = Contract(contract_data, 'binance')
+        # contracts['BTCUSDT'].price_decimals  # is just for testing
 
         return contracts
 
@@ -110,12 +112,12 @@ class BinanceFuturesClient:
         if raw_candles is not None:
             for c in raw_candles:
                 candles.append(Candle(c, interval, 'binance'))
-        #candles[-1].low
+        # candles[-1].low
 
         return candles
 
     def get_bid_ask(self, contract: Contract) -> typing.Dict[str, float]:
-        #'https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker?symbol=BTCUSDT'  # can add parameters with "&" FOR EXAMPLE ...?symbol=BTCUSDT&key=value&key2=value2'
+        # 'https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker?symbol=BTCUSDT'  # can add parameters with "&" FOR EXAMPLE ...?symbol=BTCUSDT&key=value&key2=value2'
         data = dict()
         data['symbol'] = contract.symbol
         ob_data = self._make_request('GET', '/fapi/v1/ticker/bookTicker', data)
@@ -139,7 +141,7 @@ class BinanceFuturesClient:
         if account_data is not None:
             for a in account_data['assets']:
                 balances[a['asset']] = Balance(a, 'binance')
-        #print(balances['USDT'].wallet_balance)
+        # print(balances['USDT'].wallet_balance)
 
         return balances
 

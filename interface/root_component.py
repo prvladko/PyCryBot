@@ -57,7 +57,7 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
             symbol = self._watchlist_frame.body_widgets['symbol'][key].cget('text')
             exchange = self._watchlist_frame.body_widgets['exchange'][key].cget('text')
 
-            if exhcange == 'Binance':
+            if exchange == 'Binance':
                 if symbol not in self.binance.contracts:
                     continue
 
@@ -65,16 +65,16 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
                     self.binance.get_bid_ask(self.binance.contracts[symbol])
                     continue
 
-                prices = self.binance.prices(symbol)
+                prices = self.binance.prices[symbol]
 
-            elif exhcange == 'Bitmex':
+            elif exchange == 'Bitmex':
                 if symbol not in self.bitmex.contracts:
                     continue
 
                 if symbol not in self.bitmex.prices:
                     continue
 
-                prices = self.binance.prices(symbol)
+                prices = self.bitmex.prices[symbol]
 
             else:
                 continue

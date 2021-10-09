@@ -59,6 +59,7 @@ def tick_to_decimals(tick_size: float) -> int:
 class Contract:
     def __init__(self, contract_info: typing.Dict, exchange: str):
         if exchange == 'binance':
+            # print(contract_info)  # just for test in 028 chapter
             self.symbol = contract_info['symbol']
             self.base_asset = contract_info['baseAsset']
             self.quote_asset = contract_info['quoteAsset']
