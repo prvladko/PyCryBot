@@ -84,10 +84,10 @@ class Root(tk.Tk):  # пример ООП наследования (inheritance)
                 continue
 
             if prices['bid'] is not None:
-                price_str = '{0:.{prec}f'.format(prices['bid'], prec=precision)
+                price_str = '{0:.{prec}f}'.format(prices['bid'], prec=precision)
                 self._watchlist_frame.body_widgets['bid_var'][key].set(price_str)
             if prices['ask'] is not None:
-                price_str = '{0:.{prec}f'.format(prices['ask'], prec=precision)
+                price_str = '{0:.{prec}f}'.format(prices['ask'], prec=precision)
                 self._watchlist_frame.body_widgets['ask_var'][key].set(price_str)
 
 
