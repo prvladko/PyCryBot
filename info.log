@@ -1701,3 +1701,32 @@
 2021-10-10 10:17:06,918 INFO  :: ('%s', 'XBTUSD 55686.5 / 55724')
 2021-10-10 10:17:06,943 INFO  :: ('%s', 'XBTUSD 55686.5 / 55724')
 2021-10-10 10:17:09,889 INFO  :: ('%s', 'XBTUSD 55686.5 / 55742')
+2021-10-10 10:54:52,180 INFO  :: Binance Futures Client is successfully initialized
+2021-10-10 10:54:52,971 INFO  :: Bitmex Client successfully initialized
+2021-10-10 10:54:53,837 INFO  :: Binance Websocket connection opened
+2021-10-10 10:54:53,850 INFO  :: Bitmex Websocket connection opened
+2021-10-10 10:55:00,034 INFO  :: Binance Futures Client is successfully initialized
+2021-10-10 10:55:00,705 INFO  :: Bitmex Client successfully initialized
+2021-10-10 10:55:01,102 INFO  :: Bitmex Websocket connection opened
+2021-10-10 10:55:01,168 INFO  :: Binance Websocket connection opened
+2021-10-10 10:55:04,425 INFO  :: ('%s', 'XBTUSD 55579 / 55599')
+2021-10-10 10:55:07,698 INFO  :: ('%s', 'XBTUSD 55579 / 55599')
+2021-10-10 10:58:12,223 INFO  :: Binance Futures Client is successfully initialized
+2021-10-10 10:58:13,032 INFO  :: Bitmex Client successfully initialized
+2021-10-10 10:58:13,423 INFO  :: Binance Websocket connection opened
+2021-10-10 10:58:13,433 INFO  :: Bitmex Websocket connection opened
+2021-10-10 10:58:16,935 INFO  :: ('%s', 'XBTUSD 55594 / 55619')
+2021-10-10 10:58:16,955 INFO  :: ('%s', 'XBTUSD 55594 / 55619')
+2021-10-10 10:58:16,956 INFO  :: ('%s', 'XBTUSD 55594 / 55619')
+2021-10-10 10:58:16,957 INFO  :: ('%s', 'XBTUSD 55594 / 55619')
+2021-10-10 10:58:18,919 INFO  :: ('%s', 'XBTUSD 55594 / 55619')
+2021-10-10 10:58:19,906 INFO  :: ('%s', 'XBTUSD 55594 / 55619')
+2021-10-10 10:58:19,908 INFO  :: ('%s', 'XBTUSD 55636.5 / 55655')
+2021-10-10 10:58:20,596 INFO  :: ('%s', 'XBTUSD 55636.5 / 55655')
+2021-10-10 10:58:21,194 INFO  :: ('%s', 'XBTUSD 55636.5 / 55655')
+2021-10-10 10:58:23,919 INFO  :: ('%s', 'XBTUSD 55636.5 / 55655')
+2021-10-10 10:58:24,901 INFO  :: ('%s', 'XBTUSD 55636.5 / 55655')
+2021-10-10 10:58:24,902 INFO  :: ('%s', 'XBTUSD 55636 / 55681.5')
+2021-10-10 10:58:27,204 INFO  :: ('%s', 'XBTUSD 55636 / 55681.5')
+2021-10-10 10:58:29,902 INFO  :: ('%s', 'XBTUSD 55636 / 55681.5')
+2021-10-10 10:58:31,699 INFO  :: ('%s', 'XBTUSD 55636 / 55681.5')
