@@ -93,7 +93,12 @@ class StrategyEditor(tk.Frame):
 
 
     def _show_popup(self, b_index: int):
-        return
+        self._popup_window = tk.Toplevel(self)
+        self._popup_window.wm_title('Parameters')
+
+        self._popup_window.config(bg=BG_COLOR)
+        self._popup_window.attributes('-topmost', 'true')
+        self._popup_window.grab_set()
 
     def _switch_strategy(self, b_index: int):
         return
