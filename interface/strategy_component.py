@@ -35,11 +35,11 @@ class StrategyEditor(tk.Frame):
             {'code_name': 'balance_pct', 'widget': tk.Entry, 'data_type': float, 'width': 7},
             {'code_name': 'take_profit', 'widget': tk.Entry, 'data_type': float, 'width': 7},
             {'code_name': 'stop_loss', 'widget': tk.Entry, 'data_type': float, 'width': 7},
-            {'code_name': 'balance_pct', 'widget': tk.Button, 'data_type': float, 'width': 7, 'text': 'Parameters',
+            {'code_name': 'balance_pct', 'widget': tk.Button, 'data_type': float, 'text': 'Parameters',
              'bg': BG_COLOR2, 'command': self._show_popup},
-            {'code_name': 'take_profit', 'widget': tk.Button, 'data_type': float, 'width': 7, 'text': 'OFF',
+            {'code_name': 'take_profit', 'widget': tk.Button, 'data_type': float, 'text': 'OFF',
              'bg': 'darkred', 'command': self._switch_strategy},
-            {'code_name': 'stop_loss', 'widget': tk.Button, 'data_type': float, 'width': 7, 'text': 'X',
+            {'code_name': 'stop_loss', 'widget': tk.Button, 'data_type': float, 'text': 'X',
              'bg': 'darkred', 'command': self._delete_row},
 
 
@@ -58,3 +58,12 @@ class StrategyEditor(tk.Frame):
         b_index = self._body_index
 
         self._body_index += 1
+
+    def _delete_row(self):
+        return
+
+    def _show_popup(self):
+        return
+
+    def _switch_strategy(self):
+        return
