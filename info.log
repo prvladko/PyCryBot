@@ -1887,3 +1887,19 @@
 2021-10-11 23:03:35,610 INFO  :: ('%s', 'XBTUSD 57505.5 / 57506')
 2021-10-11 23:03:37,397 INFO  :: ('%s', 'XBTUSD 57505.5 / 57506')
 2021-10-11 23:03:41,904 INFO  :: ('%s', 'XBTUSD 57505.5 / 57506')
+2021-10-11 23:09:03,406 INFO  :: Binance Futures Client is successfully initialized
+2021-10-11 23:09:04,212 INFO  :: Bitmex Client successfully initialized
+2021-10-11 23:09:04,606 INFO  :: Bitmex Websocket connection opened
+2021-10-11 23:09:04,613 INFO  :: Binance Websocket connection opened
+2021-10-11 23:09:07,590 INFO  :: ('%s', 'XBTUSD 57505.5 / 57506')
+2021-10-11 23:09:07,622 INFO  :: ('%s', 'XBTUSD 57505.5 / 57506')
+2021-10-11 23:09:43,317 ERROR  :: Error while making GET request to /fapi/v1/account: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."} (error code 400)
+2021-10-11 23:09:43,319 INFO  :: Binance Futures Client is successfully initialized
+2021-10-11 23:09:43,990 INFO  :: Bitmex Client successfully initialized
+2021-10-11 23:09:44,382 INFO  :: Bitmex Websocket connection opened
+2021-10-11 23:09:44,456 INFO  :: Binance Websocket connection opened
+2021-10-11 23:09:47,672 INFO  :: ('%s', 'XBTUSD 57492 / 57492.5')
+2021-10-11 23:09:47,907 INFO  :: ('%s', 'XBTUSD 57492 / 57492.5')
+2021-10-11 23:09:50,610 INFO  :: ('%s', 'XBTUSD 57492 / 57492.5')
+2021-10-11 23:09:52,418 INFO  :: ('%s', 'XBTUSD 57492 / 57492.5')
+2021-10-11 23:09:57,165 INFO  :: ('%s', 'XBTUSD 57492 / 57492.5')
