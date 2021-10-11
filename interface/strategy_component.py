@@ -102,7 +102,7 @@ class StrategyEditor(tk.Frame):
 
         self._popup_window.config(bg=BG_COLOR)
         self._popup_window.attributes('-topmost', 'true')
-        #self._popup_window.grab_set()  # can be added
+        self._popup_window.grab_set()  # can be deleted
 
         self._popup_window.geometry(f'+{x - 80} + {y + 30}')
 
