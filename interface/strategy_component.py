@@ -49,8 +49,10 @@ class StrategyEditor(tk.Frame):
             header = tk.Label(self._table_frame, text=h, bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT)
             header.grid(row=0, column=idx)
 
-        for h in self._headers:
-            self.body_widgets[h] = dict()
+        for h in self._base_params:
+            self.body_widgets[h['code_name']] = dict()
+            if h['code_name'] in ['strategy_type', 'contract', 'timeframe']:  # same as if h['widget'] == tk.OptionMenu
+                self.body_widgets[h['code_name'] + '_var'] = dict()
 
         self._body_index = 1
 
