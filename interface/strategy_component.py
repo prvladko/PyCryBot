@@ -83,7 +83,14 @@ class StrategyEditor(tk.Frame):
         self._body_index += 1
 
     def _delete_row(self, b_index: int):
-        return
+
+
+        for element in self._base_params:
+            self.body_widgets[element['code_name']][b_index].grid_forget()
+
+            del self.body_widgets[element['code_name']][b_index]
+
+
 
     def _show_popup(self, b_index: int):
         return
