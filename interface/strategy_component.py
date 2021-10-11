@@ -59,6 +59,15 @@ class StrategyEditor(tk.Frame):
     def _add_strategy_row(self):
         b_index = self._body_index
 
+        for col, base_param in enumerate(self._base_params):
+            code_name = base_param['code_name']
+            if base_param['widget'] == tk.OptionMenu:
+                self.body_widgets[code_name + '_var'][b_index] = tk.String()
+                self.body_widgets[code_name][b_index] = tk.OptionMenu(self._table_frame,
+                                                                      self.body_widgets[code_name + '_var'][b_index],
+                                                                      *self._all_contracts)
+                # *['BTCUSDT', 'ETHUSDT', 'XRPUSDT'] = 'BTCUSDT', 'ETHUSDT', 'XRPUSDT'
+
         self._body_index += 1
 
     def _delete_row(self):
