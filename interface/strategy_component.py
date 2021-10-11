@@ -42,7 +42,6 @@ class StrategyEditor(tk.Frame):
             {'code_name': 'stop_loss', 'widget': tk.Button, 'data_type': float, 'text': 'X',
              'bg': 'darkred', 'command': self._delete_row},
 
-
         ]
 
         self._extra_params = {
@@ -55,8 +54,6 @@ class StrategyEditor(tk.Frame):
                 {'code_name': 'min_volume', 'name': 'Minimum Volume', 'widget': tk.Entry, 'data': float}
             ]
         }
-
-
 
         for idx, h in enumerate(self._headers):
             header = tk.Label(self._table_frame, text=h, bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT)
@@ -87,8 +84,9 @@ class StrategyEditor(tk.Frame):
                 self.body_widgets[code_name][b_index] = tk.Entry(self._table_frame, justify=tk.CENTER)
             elif base_param['widget'] == tk.Button:
                 self.body_widgets[code_name][b_index] = tk.Button(self._table_frame, text=base_param['text'],
-                                          bg=base_param['bg'], fg=FG_COLOR,
-                                          command=lambda frozen_command=base_param['command']: frozen_command(b_index))
+                                                                  bg=base_param['bg'], fg=FG_COLOR,
+                                                                  command=lambda frozen_command=base_param[
+                                                                      'command']: frozen_command(b_index))
             else:
                 continue
 
@@ -98,13 +96,10 @@ class StrategyEditor(tk.Frame):
 
     def _delete_row(self, b_index: int):
 
-
         for element in self._base_params:
             self.body_widgets[element['code_name']][b_index].grid_forget()
 
             del self.body_widgets[element['code_name']][b_index]
-
-
 
     def _show_popup(self, b_index: int):
 
