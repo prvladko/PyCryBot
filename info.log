@@ -1804,3 +1804,58 @@
 2021-10-11 22:30:56,894 INFO  :: ('%s', 'XBTUSD 57642.5 / 57645')
 2021-10-11 22:31:02,897 INFO  :: ('%s', 'XBTUSD 57642.5 / 57645')
 2021-10-11 22:31:05,601 INFO  :: ('%s', 'XBTUSD 57642.5 / 57645')
+2021-10-11 22:41:37,014 INFO  :: Binance Futures Client is successfully initialized
+2021-10-11 22:41:37,815 INFO  :: Bitmex Client successfully initialized
+2021-10-11 22:41:38,194 INFO  :: Binance Websocket connection opened
+2021-10-11 22:41:38,206 INFO  :: Bitmex Websocket connection opened
+2021-10-11 22:41:40,156 INFO  :: ('%s', 'XBTUSD 57634 / 57655')
+2021-10-11 22:41:41,902 INFO  :: ('%s', 'XBTUSD 57634 / 57655')
+2021-10-11 22:41:47,905 INFO  :: ('%s', 'XBTUSD 57634 / 57655')
+2021-10-11 22:41:52,399 INFO  :: ('%s', 'XBTUSD 57634 / 57655')
+2021-10-11 22:41:56,896 INFO  :: ('%s', 'XBTUSD 57634 / 57655')
+2021-10-11 22:45:31,990 INFO  :: Binance Futures Client is successfully initialized
+2021-10-11 22:45:32,819 INFO  :: Bitmex Client successfully initialized
+2021-10-11 22:45:33,208 INFO  :: Binance Websocket connection opened
+2021-10-11 22:45:33,215 INFO  :: Bitmex Websocket connection opened
+2021-10-11 22:45:35,172 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:45:35,174 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:45:37,399 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:45:40,607 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:45:41,895 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:45:45,609 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:45:47,910 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:46:54,974 INFO  :: Binance Futures Client is successfully initialized
+2021-10-11 22:46:55,747 INFO  :: Bitmex Client successfully initialized
+2021-10-11 22:46:56,122 INFO  :: Binance Websocket connection opened
+2021-10-11 22:46:56,131 INFO  :: Bitmex Websocket connection opened
+2021-10-11 22:46:57,662 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:46:57,688 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:47:00,612 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:47:02,906 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:47:05,609 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:47:07,411 INFO  :: ('%s', 'XBTUSD 57765 / 57765.5')
+2021-10-11 22:49:20,720 INFO  :: Binance Futures Client is successfully initialized
+2021-10-11 22:49:21,521 INFO  :: Bitmex Client successfully initialized
+2021-10-11 22:49:21,912 INFO  :: Binance Websocket connection opened
+2021-10-11 22:49:21,923 INFO  :: Bitmex Websocket connection opened
+2021-10-11 22:49:25,236 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:49:26,907 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:49:32,911 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:49:35,106 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:49:37,401 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:49:41,921 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:49:56,388 ERROR  :: Error while making GET request to /fapi/v1/account: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."} (error code 400)
+2021-10-11 22:49:56,390 INFO  :: Binance Futures Client is successfully initialized
+2021-10-11 22:49:57,076 INFO  :: Bitmex Client successfully initialized
+2021-10-11 22:49:57,457 INFO  :: Bitmex Websocket connection opened
+2021-10-11 22:49:57,538 INFO  :: Binance Websocket connection opened
+2021-10-11 22:50:00,238 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:50:02,901 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:50:07,405 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:50:11,899 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:50:15,576 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:50:15,605 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:50:15,607 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:50:17,200 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:50:17,556 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')
+2021-10-11 22:50:17,904 INFO  :: ('%s', 'XBTUSD 57731.5 / 57758')

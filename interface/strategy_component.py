@@ -93,12 +93,20 @@ class StrategyEditor(tk.Frame):
 
 
     def _show_popup(self, b_index: int):
+
+        x = self.body_widgets['parameters'][b_index].winfo_rootx()
+        y = self.body_widgets['parameters'][b_index].winfo_rooty()
+
         self._popup_window = tk.Toplevel(self)
         self._popup_window.wm_title('Parameters')
 
         self._popup_window.config(bg=BG_COLOR)
         self._popup_window.attributes('-topmost', 'true')
-        self._popup_window.grab_set()
+        #self._popup_window.grab_set()  # can be added
+
+        self._popup_window.geometry(f'+{x - 80} + {y + 30}')
+
+        strat_selected = self.body_widgets['strategy_type_var'][b_index].get()
 
     def _switch_strategy(self, b_index: int):
         return
