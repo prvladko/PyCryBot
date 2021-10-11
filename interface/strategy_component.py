@@ -32,4 +32,6 @@ class StrategyEditor(tk.Frame):
         self._body_index = 1
 
     def _add_strategy_row(self):
-        return
+        b_index = self._body_index
+
+        self._body_index += 1
