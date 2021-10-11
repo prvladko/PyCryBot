@@ -63,6 +63,7 @@ class StrategyEditor(tk.Frame):
             code_name = base_param['code_name']
             if base_param['widget'] == tk.OptionMenu:
                 self.body_widgets[code_name + '_var'][b_index] = tk.StringVar()
+                self.body_widgets[code_name + '_var'][b_index].set(base_param['values'][0])
                 self.body_widgets[code_name][b_index] = tk.OptionMenu(self._table_frame,
                                                                       self.body_widgets[code_name + '_var'][b_index],
                                                                       *base_param['values'])
