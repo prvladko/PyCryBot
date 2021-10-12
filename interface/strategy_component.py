@@ -137,6 +137,9 @@ class StrategyEditor(tk.Frame):
             if param['widget'] == tk.Entry:
                 self._extra_input[code_name] = tk.Entry(self._popup_window, bg=BG_COLOR2, justify=tk.CENTER, fg=FG_COLOR,
                                       insertbackground=FG_COLOR)
+                if self._additional_parameters[b_index][code_name] is not None:
+                    self._extra_input[code_name].insert(tk.END, str(self._additional_parameters[b_index][code_name]))  # The Entry widget is empty when we insert data in it
+                    # so the .insert(tk.END...) could be a .insert(0...) instead, it doesn't matter
             else:
                 continue
 
@@ -158,9 +161,9 @@ class StrategyEditor(tk.Frame):
             code_name = param['code_name']
 
             if self._extra_input[code_name].get() == '':
-                self._additional_parameters[code_name] = None
+                self._additional_parameters[b_index][code_name] = None
             else:
-                self._additional_parameters[code_name] = param['data_type'](self._extra_input[code_name].get())
+                self._additional_parameters[b_index][code_name] = param['data_type'](self._extra_input[code_name].get())
                 # ^^^ can be str, float, int ^^^
 
         self._popup_window.destroy()
