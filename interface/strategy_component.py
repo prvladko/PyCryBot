@@ -10,8 +10,14 @@ class StrategyEditor(tk.Frame):
     def __init__(self, binance: BinanceFuturesClient, bitmex: BitmexClient, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+        self._exchanges = {'Binance': binance, 'Bitmex': bitmex}
+
         self._all_contracts = ['BTCUSDT', 'ETHUSDT']
         self._all_timeframes = ['1m', '5m', '15m', '30m', '1h', '4h']
+
+        for exchange, client in self._exchanges.items():
+            for symbol, contract in client.contracts.items():
+                self._all_contracts.append(symbol + '_' + exchange.capitalize())
 
         self._commands_frame = tk.Frame(self, bg=BG_COLOR)
         self._commands_frame.pack(side=tk.TOP)
