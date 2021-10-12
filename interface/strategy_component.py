@@ -133,5 +133,13 @@ class StrategyEditor(tk.Frame):
 
             row_nb += 1
 
+        # Validation Button
+
+        validation_button = tk.Button(self._popup_window, text='Validate', bg=BG_COLOR2, fg=FG_COLOR,
+                                      command-lambda: self._validate_parameters(b_index))
+
+    def _validate_parameters(self, b_index: int):
+        return
+
     def _switch_strategy(self, b_index: int):
         return
