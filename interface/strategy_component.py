@@ -15,7 +15,7 @@ class StrategyEditor(tk.Frame):
 
         self._exchanges = {'Binance': binance, 'Bitmex': bitmex}
 
-        self._all_contracts = ['BTCUSDT', 'ETHUSDT']
+        self._all_contracts = []
         self._all_timeframes = ['1m', '5m', '15m', '30m', '1h', '4h']
 
         for exchange, client in self._exchanges.items():
@@ -133,7 +133,7 @@ class StrategyEditor(tk.Frame):
         self._popup_window.attributes('-topmost', 'true')
         self._popup_window.grab_set()  # can be deleted
 
-        self._popup_window.geometry(f'+{x - 80} + {y + 30}')
+        self._popup_window.geometry(f"+{x - 80}+{y + 30}")  # there was an error at this point
 
         strat_selected = self.body_widgets['strategy_type_var'][b_index].get()
 
