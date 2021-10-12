@@ -7,8 +7,10 @@ from connectors.binance_futures import BinanceFuturesClient
 from connectors.bitmex import BitmexClient
 
 class StrategyEditor(tk.Frame):
-    def __init__(self, binance: BinanceFuturesClient, bitmex: BitmexClient, *args, **kwargs):
+    def __init__(self, root, binance: BinanceFuturesClient, bitmex: BitmexClient, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+        self.root = root
 
         self._exchanges = {'Binance': binance, 'Bitmex': bitmex}
 
@@ -180,5 +182,6 @@ class StrategyEditor(tk.Frame):
 
         for param in ['balance_pct', 'take_profit', 'stop_loss']:
             if self.body_widgets[param][b_index].get() == '':
+                self.root.logging_frame.add_log(f'Missing {param} parameter')
                 return
 
