@@ -6,6 +6,7 @@ from interface.styling import *
 from connectors.binance_futures import BinanceFuturesClient
 from connectors.bitmex import BitmexClient
 
+
 class StrategyEditor(tk.Frame):
     def __init__(self, root, binance: BinanceFuturesClient, bitmex: BitmexClient, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -48,11 +49,11 @@ class StrategyEditor(tk.Frame):
             {'code_name': 'balance_pct', 'widget': tk.Entry, 'data_type': float, 'width': 7},
             {'code_name': 'take_profit', 'widget': tk.Entry, 'data_type': float, 'width': 7},
             {'code_name': 'stop_loss', 'widget': tk.Entry, 'data_type': float, 'width': 7},
-            {'code_name': 'balance_pct', 'widget': tk.Button, 'data_type': float, 'text': 'Parameters',
+            {'code_name': 'parameters', 'widget': tk.Button, 'data_type': float, 'text': 'Parameters',
              'bg': BG_COLOR2, 'command': self._show_popup},
-            {'code_name': 'take_profit', 'widget': tk.Button, 'data_type': float, 'text': 'OFF',
+            {'code_name': 'activation', 'widget': tk.Button, 'data_type': float, 'text': 'OFF',
              'bg': 'darkred', 'command': self._switch_strategy},
-            {'code_name': 'stop_loss', 'widget': tk.Button, 'data_type': float, 'text': 'X',
+            {'code_name': 'delete', 'widget': tk.Button, 'data_type': float, 'text': 'X',
              'bg': 'darkred', 'command': self._delete_row},
 
         ]
@@ -64,7 +65,7 @@ class StrategyEditor(tk.Frame):
                 {'code_name': 'ema_signal', 'name': 'MACD Signal Length', 'widget': tk.Entry, 'data_type': int},
             ],
             'Breakout': [
-                {'code_name': 'min_volume', 'name': 'Minimum Volume', 'widget': tk.Entry, 'data': float}
+                {'code_name': 'min_volume', 'name': 'Minimum Volume', 'widget': tk.Entry, 'data_type': float}
             ]
         }
 
@@ -200,7 +201,7 @@ class StrategyEditor(tk.Frame):
         take_profit = float(self.body_widgets['take_profit'][b_index].get())
         stop_loss = float(self.body_widgets['stop_loss'][b_index].get())
 
-        if self._body_widgets['activation'][b_index].cget('text') == 'OFF':
+        if self.body_widgets['activation'][b_index].cget('text') == 'OFF':
 
             for param in self._base_params:
                 code_name = param['code_name']
@@ -208,8 +209,8 @@ class StrategyEditor(tk.Frame):
                 if code_name != 'activation' and '_var' not in code_name:
                     self.body_widgets[code_name][b_index].config(state=tk.DISABLED)
 
-                self.body_widgets['activation'][b_index].config(bg='darkgreen', text='ON')
-                self.root.logging_frame.add_log(f"{strat_selected} strategy on {symbol} / {timeframe} started")
+            self.body_widgets['activation'][b_index].config(bg='darkgreen', text='ON')
+            self.root.logging_frame.add_log(f"{strat_selected} strategy on {symbol} / {timeframe} started")
 
         else:
             for param in self._base_params:
