@@ -177,4 +177,8 @@ class StrategyEditor(tk.Frame):
         self._popup_window.destroy()
 
     def _switch_strategy(self, b_index: int):
-        return
+
+        for param in ['balance_pct', 'take_profit', 'stop_loss']:
+            if self.body_widgets[param][b_index].get() == '':
+                return
+
