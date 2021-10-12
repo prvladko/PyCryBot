@@ -185,3 +185,17 @@ class StrategyEditor(tk.Frame):
                 self.root.logging_frame.add_log(f'Missing {param} parameter')
                 return
 
+        strat_selected = self.body_widgets['strategy_type_var'][b_index].get()
+
+        for param in self._extra_params[strat_selected]:
+            if self._additional_parameters[b_index][param['code_name']] is None:
+                self.root.logging_frame.add_log(f"Missing {param['code_name']} parameter")
+                return
+
+        symbol = self.body_widgets['contract_var'][b_index].get().split('_')[0]
+        timeframe = self.body_widgets['timeframe_var'][b_index].get()
+        exchange = self.body_widgets['contract_var'][b_index].get().split('_')[1]
+
+        balance_pct = float(self.body_widgets['balance_pct'][b_index].get())
+        take_profit = float(self.body_widgets['take_profit'][b_index].get())
+        stop_loss = float(self.body_widgets['stop_loss'][b_index].get())
