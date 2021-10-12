@@ -218,6 +218,6 @@ class StrategyEditor(tk.Frame):
                 if code_name != 'activation' and '_var' not in code_name:
                     self.body_widgets[code_name][b_index].config(state=tk.NORMAL)
 
-                self.body_widgets['activation'][b_index].config(bg='darkred', text='OFF')
-                self.root.logging_frame.add_log(f"{strat_selected} strategy on {symbol} / {timeframe} stopped")
+            self.body_widgets['activation'][b_index].config(bg='darkred', text='OFF')
+            self.root.logging_frame.add_log(f"{strat_selected} strategy on {symbol} / {timeframe} stopped")
 
