@@ -199,3 +199,25 @@ class StrategyEditor(tk.Frame):
         balance_pct = float(self.body_widgets['balance_pct'][b_index].get())
         take_profit = float(self.body_widgets['take_profit'][b_index].get())
         stop_loss = float(self.body_widgets['stop_loss'][b_index].get())
+
+        if self._body_widgets['activation'][b_index].cget('text') == 'OFF':
+
+            for param in self._base_params:
+                code_name = param['code_name']
+
+                if code_name != 'activation' and '_var' not in code_name:
+                    self.body_widgets[code_name][b_index].config(state=tk.DISABLED)
+
+                self.body_widgets['activation'][b_index].config(bg='darkgreen', text='ON')
+                self.root.logging_frame.add_log(f"{strat_selected} strategy on {symbol} / {timeframe} started")
+
+        else:
+            for param in self._base_params:
+                code_name = param['code_name']
+
+                if code_name != 'activation' and '_var' not in code_name:
+                    self.body_widgets[code_name][b_index].config(state=tk.NORMAL)
+
+                self.body_widgets['activation'][b_index].config(bg='darkred', text='OFF')
+                self.root.logging_frame.add_log(f"{strat_selected} strategy on {symbol} / {timeframe} stopped")
+
