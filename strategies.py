@@ -26,3 +26,12 @@ class TechnicalStrategy(Strategy):
         self._ema_fast = other_params['ema_fast']
         self._ema_slow = other_params['ema_slow']
         self._ema_signal = other_params['ema_signal']
+
+
+class BreakoutStrategy(Strategy):
+    def __init__(self, contract: Contract, exchange: str, timeframe: str, balance_pct: float, take_profit: float,
+                 stop_loss: float, other_params: typing.Dict):  # other_params for example ema_fast
+        super().__init__(contract, exchange, timeframe, balance_pct, take_profit, stop_loss)
+
+        self._min_volume = other_params['min_volume']
+
