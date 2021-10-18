@@ -209,18 +209,26 @@ class BinanceFuturesClient:
                 logger.error('Binance error in run_forever() method: %s', e)
             time.sleep(2)
 
-    def _on_open(self, ws):
-        logger.info('Binance Websocket connection opened')
+    def _on_open(self):
+        logger.info('Binance connection opened')
 
         self.subscribe_channel(list(self.contracts.values()), 'bookTicker')
+        self.subscribe_channel(list(self.contracts.values()), 'aggTrade')
 
-    def _on_close(self, ws):
-        logger.warning('Binance Websocket connection closed')
+# ^^^On Binance we can stream a max of 200 channels with a single connection.
+#if subscribing to the aggTrade channel trigger an 'invalid close opcode' error:
+    # - Remove it from the _on_open() method and do not subscribe to all the channels at once.
+    # - Instead, subscribe to the aggTrade channel only for the symbol we need when activating a strategy
 
-    def _on_error(self, ws, msg: str):
+#strategy_component.py:
+
+    def _on_close(self):
+        logger.warning('Binance connection closed')
+
+    def _on_error(self, msg: str):
         logger.error('Binance connection error: %s', msg)
 
-    def _on_message(self, ws, msg: str):
+    def _on_message(self, msg: str):
 
         data = json.loads(msg)
 
@@ -234,6 +242,10 @@ class BinanceFuturesClient:
                 else:
                     self.prices[symbol]['bid'] = float(data['b'])
                     self.prices[symbol]['ask'] = float(data['a'])
+
+            elif data['e'] == 'aggTrade':
+
+                symbol = data['s']
 
     def subscribe_channel(self, contracts: typing.List[Contract], channel: str):
         data = dict()
