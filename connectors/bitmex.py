@@ -202,6 +202,7 @@ class BitmexClient:
         logger.info('Bitmex Websocket connection opened')
 
         self.subscribe_channel('instrument')
+        self.subscribe_channel('trade')
 
     def _on_close(self, ws):
         logger.warning('Bitmex Websocket connection closed')
@@ -228,8 +229,14 @@ class BitmexClient:
                     if 'askPrice' in d:
                         self.prices[symbol]['ask'] = d['askPrice']
 
-                    if symbol == 'XBTUSD':
-                        self._add_log(symbol + ' ' + str(self.prices[symbol]['bid']) + ' / ' + str(self.prices[symbol]['ask']))
+                if data['table'] == 'trade':
+
+                    for d in data['data']:
+
+                        symbol = d['symbol']  # in this case, the timestamp represents the time of the trade
+
+                    # if symbol == 'XBTUSD':
+                        # self._add_log(symbol + ' ' + str(self.prices[symbol]['bid']) + ' / ' + str(self.prices[symbol]['ask']))
 
                     # print(symbol, self.prices[symbol])  # for testing
 

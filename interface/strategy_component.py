@@ -244,4 +244,3 @@ class StrategyEditor(tk.Frame):
 
             self.body_widgets['activation'][b_index].config(bg='darkred', text='OFF')
             self.root.logging_frame.add_log(f"{strat_selected} strategy on {symbol} / {timeframe} stopped")
-            
