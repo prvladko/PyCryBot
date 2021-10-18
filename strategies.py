@@ -1,5 +1,6 @@
 import logging
-from typing import *
+# from typing import *
+import typing
 
 from models import *
 
@@ -17,7 +18,7 @@ class Strategy:
         self.take_profit = take_profit
         self.stop_loss = stop_loss
 
-        self.candles: List[Candle] = []
+        self.candles: typing.List[Candle] = []  # can be self.candles: List[Candle] = [] when use 'from typing import *'
 
 
 class TechnicalStrategy(Strategy):
