@@ -15,6 +15,8 @@ import threading
 
 from models import *
 
+from strategies import TechnicalStrategy, BreakoutStrategy
+
 logger = logging.getLogger()
 
 class BinanceFuturesClient:
@@ -35,6 +37,7 @@ class BinanceFuturesClient:
         self.balances = self.get_balances()
 
         self.prices = dict()
+        self.strategies: typing.Dict[int, typing.Union[TechnicalStrategy, BreakoutStrategy]] = dict()
 
         self.logs = []
 
