@@ -11,6 +11,8 @@ import hashlib
 import websocket
 import json
 
+import dateutil.parser
+
 import threading
 
 from models import *
@@ -233,7 +235,9 @@ class BitmexClient:
 
                     for d in data['data']:
 
-                        symbol = d['symbol']  # in this case, the timestamp represents the time of the trade
+                        symbol = d['symbol']
+# in this case, the timestamp represents the time of the trade
+                        ts = int(dateutil.parser.isoparse(d['timestamp']).timestamp() * 1000)  # ts key in ISO 8601 format (as in the connectors part)
 
                     # if symbol == 'XBTUSD':
                         # self._add_log(symbol + ' ' + str(self.prices[symbol]['bid']) + ' / ' + str(self.prices[symbol]['ask']))
