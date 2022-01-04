@@ -20,6 +20,9 @@ class Strategy:
 
         self.candles: typing.List[Candle] = []  # can be self.candles: List[Candle] = [] when use 'from typing import *'
 
+    def parse_trades(self, price: float, size:float, timestamp: int):
+        
+
 
 class TechnicalStrategy(Strategy):
     def __init__(self, contract: Contract, exchange: str, timeframe: str, balance_pct: float, take_profit: float,

@@ -17,6 +17,8 @@ import threading
 
 from models import *
 
+from strategies import TechnicalStrategy, BreakoutStrategy
+
 logger = logging.getLogger()
 # 017 Bitmex - REST API & Authentication---
 class BitmexClient:
@@ -38,6 +40,7 @@ class BitmexClient:
         self.balances = self.get_balances()
 
         self.prices = dict()
+        self.strategies: typing.Dict[int, typing.Union[TechnicalStrategy, BreakoutStrategy]] = dict()
 
         self.logs = []
 
@@ -239,10 +242,15 @@ class BitmexClient:
 # in this case, the timestamp represents the time of the trade
                         ts = int(dateutil.parser.isoparse(d['timestamp']).timestamp() * 1000)  # ts key in ISO 8601 format (as in the connectors part)
 
+                        for key, strat in self.strategies.items():
+                            if strat.contract.symbol == symbol:
+                                strat.parse_trades(float(d['price']), float(d['size']), ts)
+
                     # if symbol == 'XBTUSD':
                         # self._add_log(symbol + ' ' + str(self.prices[symbol]['bid']) + ' / ' + str(self.prices[symbol]['ask']))
 
                     # print(symbol, self.prices[symbol])  # for testing
+
 
     def subscribe_channel(self, topic: str):
         data = dict()
