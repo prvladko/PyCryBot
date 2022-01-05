@@ -94,6 +94,10 @@ class TechnicalStrategy(Strategy):
 
         # print('Activated strategy for ', contract.symbol)  # for test
 
+    def _rsi(self):
+
+    def _macd(self):
+        
 
 class BreakoutStrategy(Strategy):
     def __init__(self, contract: Contract, exchange: str, timeframe: str, balance_pct: float, take_profit: float,
@@ -104,19 +108,19 @@ class BreakoutStrategy(Strategy):
 
         def _check_signal(self) -> int:
 
-            # if self.candles[-1].close > self.candles[-2].high and self.candles[-1].volume > self._min_volume:
-            #     # additional condition can be useful for candle patterns strategies (Inside Bar Pattern or
-            #     # Outside Bar Pattern where we have what's called the mother bar, and the next bar is within the limits
-            #     # or outside of the limits of the mother bar)
-            #     return 1
-            # elif self.candles[-1].close < self.candles[-2].low and self.candles[-1].volume > self._min_volume:
-            #     return -1
-            # else:
-            #     return 0
+            if self.candles[-1].close > self.candles[-2].high and self.candles[-1].volume > self._min_volume:
+                # additional condition can be useful for candle patterns strategies (Inside Bar Pattern or
+                # Outside Bar Pattern where we have what's called the mother bar, and the next bar is within the limits
+                # or outside of the limits of the mother bar)
+                return 1
+            elif self.candles[-1].close < self.candles[-2].low and self.candles[-1].volume > self._min_volume:
+                return -1
+            else:
+                return 0
 
-            # Inside Bar Pattern example!!!
-            if self.candles[-2].high < self.candles[-3].high and self.candles[-2].low > self.candles[-3].low:
-                if self.candles[-1].close > self.candles[-3].high:
-                    # Upside breakout
-                elif self.candles[-1].close < self.candles[-3].high:
-                    # Downside breakout
+            # # Inside Bar Pattern example!!!
+            # if self.candles[-2].high < self.candles[-3].high and self.candles[-2].low > self.candles[-3].low:
+            #     if self.candles[-1].close > self.candles[-3].high:
+            #         # Upside breakout
+            #     elif self.candles[-1].close < self.candles[-3].high:
+            #         # Downside breakout
