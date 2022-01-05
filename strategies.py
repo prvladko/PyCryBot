@@ -113,7 +113,7 @@ class TechnicalStrategy(Strategy):
         down[down > 0] = 0
 
         avg_gain = up.ewm(com=(self._rsi_length - 1), min_periods=self._rsi_length).mean()
-        avg_loss = down.ewm(com=(self._rsi_length - 1), min_periods=self._rsi_length).mean()
+        avg_loss = down.abs().ewm(com=(self._rsi_length - 1), min_periods=self._rsi_length).mean()
 
         rs = avg_gain / avg_loss
 
@@ -141,14 +141,21 @@ class TechnicalStrategy(Strategy):
         macd_line = ema_fast - ema_slow
         macd_signal = macd_line.ewm(span=self._ema_signal).mean()
 
-        return macd_line[-2], macd_signal[-2]
+        return macd_line.iloc[-2], macd_signal.iloc[-2]
 
     def _check_signal(self):
 
         macd_line, macd_signal = self._macd()
         rsi = self._rsi()
 
-        
+        # print(rsi, macd_line, macd_signal)  # for test
+
+        if rsi < 30 and macd_line > macd_signal:
+            return 1  # indicating a long
+        elif rsi > 70 and macd_line < macd_signal:  # the contract is overbought
+            return -1  # indicating a short
+        else:
+            return 0
 
 
 class BreakoutStrategy(Strategy):
