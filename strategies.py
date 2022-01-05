@@ -1,6 +1,8 @@
 import logging
-# from typing import *
-import typing
+from typing import *
+#import typing
+
+import pandas as pd
 
 from models import *
 
@@ -96,8 +98,29 @@ class TechnicalStrategy(Strategy):
 
     def _rsi(self):
 
-    def _macd(self):
-        
+
+    # MACD Calculation steps: 1) Fast EMA Calc 2) Slow EMA CAlc 3) Fast EMA - Slow EMA 4) EMA on the result of 3
+    def _macd(self) -> Tuple[float, float]:
+
+        close_list = []
+        for candle in self.candles:
+            close_list.append(candle.close)
+
+        closes = pd.Series(close_list)
+
+        # ewm() provides Exponential Weighted functions
+        ema_fast = closes.ewm(span=self._ema_fast).mean()
+        ema_slow = closes.ewm(span=self._ema_slow).mean()
+
+        macd_line = ema_fast - ema_slow
+        macd_signal = macd_line.ewm(span=self._ema_signal).mean()
+
+        return macd_line[-2], macd_signal[-2]
+
+    def _check_signal(self):
+
+        macd_line, macd_signal = self._macd()
+
 
 class BreakoutStrategy(Strategy):
     def __init__(self, contract: Contract, exchange: str, timeframe: str, balance_pct: float, take_profit: float,
