@@ -257,7 +257,8 @@ class BinanceFuturesClient:
 
                 for key, strat in self.strategies.items():
                     if strat.contract.symbol == symbol:
-                        strat.parse_trades(float(data['p']), float(data['q']), data['T'])
+                        res = strat.parse_trades(float(data['p']), float(data['q']), data['T'])
+                        strat.check_trade(res)
 
     def subscribe_channel(self, contracts: typing.List[Contract], channel: str):
         data = dict()

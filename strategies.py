@@ -25,9 +25,16 @@ class Strategy:
         self.take_profit = take_profit
         self.stop_loss = stop_loss
 
+        self.open_position = False
+
         self.candles: typing.List[Candle] = []  # can be self.candles: List[Candle] = [] when use 'from typing import *'
 
     def parse_trades(self, price: float, size:float, timestamp: int) -> str:
+
+        timestamp_diff = int(time.time() * 1000) - timestamp
+        if timestamp_diff >= 2000:
+            logger.warning("%s %s: %s milliseconds of difference between the current time and the trade time",
+                           self.exchange, self.contract.symbol, timestamp_diff)
 
         last_candle = self.candles[-1]
 
@@ -157,6 +164,15 @@ class TechnicalStrategy(Strategy):
         else:
             return 0
 
+    def check_trade(self, tick_type: str):
+
+        if tick_type == "new_candle" and not self.open_position:
+            signal_result = self._check_signal()
+
+            if signal_result in [-1, 1]:
+                self._open_position(signal_result)
+
+
 
 class BreakoutStrategy(Strategy):
     def __init__(self, contract: Contract, exchange: str, timeframe: str, balance_pct: float, take_profit: float,
@@ -183,3 +199,11 @@ class BreakoutStrategy(Strategy):
             #         # Upside breakout
             #     elif self.candles[-1].close < self.candles[-3].high:
             #         # Downside breakout
+
+        def check_trade(self, tick_type: str):
+
+            if not self.open_position:
+                signal_result = self._check_signal()
+
+                if signal_result in [-1, 1]:
+                    self._open_position(signal_result)

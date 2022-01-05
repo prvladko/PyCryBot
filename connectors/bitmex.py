@@ -20,6 +20,8 @@ from models import *
 from strategies import TechnicalStrategy, BreakoutStrategy
 
 logger = logging.getLogger()
+
+
 # 017 Bitmex - REST API & Authentication---
 class BitmexClient:
     def __init__(self, public_key: str, secret_key: str, testnet: bool):
@@ -58,7 +60,8 @@ class BitmexClient:
         message = method + endpoint + '?' + urlencode(data) + expires if len(data) > 0 else method + endpoint + expires
         return hmac.new(self._secret_key.encode(), message.encode(), hashlib.sha256).hexdigest()
 
-    def _make_request(self, method: str, endpoint: str, data: typing.Dict):  # doesn't return the same output, so can be None o JSON object, not going to type it with '->'
+    def _make_request(self, method: str, endpoint: str,
+                      data: typing.Dict):  # doesn't return the same output, so can be None o JSON object, not going to type it with '->'
 
         headers = dict()
         expires = str(int(time.time()) + 5)
@@ -138,11 +141,12 @@ class BitmexClient:
         if raw_candles is not None:
             for c in reversed(raw_candles):
                 candles.append(Candle(c, timeframe, 'bitmex'))
-        #candles[-1].low
+        # candles[-1].low
 
         return candles
 
-    def place_order(self, contract: Contract, order_type: str, quantity: int, side: str, price=None, tif=None) -> OrderStatus:
+    def place_order(self, contract: Contract, order_type: str, quantity: int, side: str, price=None,
+                    tif=None) -> OrderStatus:
         data = dict()
 
         data['symbol'] = contract.symbol
@@ -194,7 +198,7 @@ class BitmexClient:
 
     def _start_ws(self):
         self._ws = websocket.WebSocketApp(self._wss_url, on_open=self._on_open, on_close=self._on_close,
-                                         on_error=self._on_error, on_message=self._on_message)
+                                          on_error=self._on_error, on_message=self._on_message)
 
         while True:
             try:
@@ -239,18 +243,19 @@ class BitmexClient:
                     for d in data['data']:
 
                         symbol = d['symbol']
-# in this case, the timestamp represents the time of the trade
-                        ts = int(dateutil.parser.isoparse(d['timestamp']).timestamp() * 1000)  # ts key in ISO 8601 format (as in the connectors part)
+                        # in this case, the timestamp represents the time of the trade
+                        ts = int(dateutil.parser.isoparse(
+                            d['timestamp']).timestamp() * 1000)  # ts key in ISO 8601 format (as in the connectors part)
 
                         for key, strat in self.strategies.items():
                             if strat.contract.symbol == symbol:
-                                strat.parse_trades(float(d['price']), float(d['size']), ts)
+                                res = strat.parse_trades(float(d['price']), float(d['size']), ts)
+                                strat.check_trade(res)
 
                     # if symbol == 'XBTUSD':
-                        # self._add_log(symbol + ' ' + str(self.prices[symbol]['bid']) + ' / ' + str(self.prices[symbol]['ask']))
+                    # self._add_log(symbol + ' ' + str(self.prices[symbol]['bid']) + ' / ' + str(self.prices[symbol]['ask']))
 
                     # print(symbol, self.prices[symbol])  # for testing
-
 
     def subscribe_channel(self, topic: str):
         data = dict()
