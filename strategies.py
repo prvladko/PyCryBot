@@ -96,7 +96,33 @@ class TechnicalStrategy(Strategy):
 
         # print('Activated strategy for ', contract.symbol)  # for test
 
+        self._rsi_length = other_params['rsi_length']
+
     def _rsi(self):
+        close_list = []
+        for candle in self.candles:
+            close_list.append(candle.close)
+
+        closes = pd.Series(close_list)
+
+        # RSI formula = 100 - 100/(1 + RS) // RS (Relative Strength) = Average Gain/Average Loss
+        delta = closes.diff().dropna()
+
+        up, down = delta.copy(), delta.copy()
+        up[up < 0] = 0
+        down[down > 0] = 0
+
+        avg_gain = up.ewm(com=(self._rsi_length - 1), min_periods=self._rsi_length).mean()
+        avg_loss = down.ewm(com=(self._rsi_length - 1), min_periods=self._rsi_length).mean()
+
+        rs = avg_gain / avg_loss
+
+        rsi = 100 - 100 / (1 + rs)
+        rsi = rsi.round(2)
+
+        return rsi.iloc[-2]
+
+
 
 
     # MACD Calculation steps: 1) Fast EMA Calc 2) Slow EMA CAlc 3) Fast EMA - Slow EMA 4) EMA on the result of 3
@@ -120,6 +146,9 @@ class TechnicalStrategy(Strategy):
     def _check_signal(self):
 
         macd_line, macd_signal = self._macd()
+        rsi = self._rsi()
+
+        
 
 
 class BreakoutStrategy(Strategy):
