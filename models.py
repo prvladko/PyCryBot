@@ -65,6 +65,7 @@ def tick_to_decimals(tick_size: float) -> int:
     else:
         return 0
 
+
 class Contract:
     def __init__(self, contract_info: typing.Dict, exchange: str):
         if exchange == 'binance':
@@ -85,6 +86,15 @@ class Contract:
             self.quantity_decimals = tick_to_decimals(contract_info['lotSize'])
             self.tick_size = contract_info['tickSize'] # 0.01
             self.lot_size = contract_info['lotSize']
+
+            self.quanto = contract_info['isQuanto']
+            self.inverse = contract_info['isInverse']
+
+            self.multiplier = contract_info['multiplier'] * BITMEX_MULTIPLIER  # from Satoshi to Bitcoin
+
+            if self.inverse:
+                self.multiplier *= -1
+
 
 class OrderStatus:
     def __init__(self, order_info: typing.Dict, exchange: str):
