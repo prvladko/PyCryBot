@@ -254,9 +254,11 @@ class BitmexClient:
 
                                         if trade.contract.inverse:
                                             if trade.side == "long":
-                                                trade.pnl = (1 / trade.entry_price - 1 / price) * multiplier * trade.quantity
+                                                trade.pnl = (
+                                                                        1 / trade.entry_price - 1 / price) * multiplier * trade.quantity
                                             elif trade.side == "short":
-                                                trade.pnl = (1 / price - 1 / trade.entry_price) * multiplier * trade.quantity
+                                                trade.pnl = (
+                                                                        1 / price - 1 / trade.entry_price) * multiplier * trade.quantity
                                         else:
                                             if trade.side == "long":
                                                 trade.pnl = (price - trade.entry_price) * multiplier * trade.quantity
@@ -265,24 +267,24 @@ class BitmexClient:
                     except RuntimeError as e:
                         logger.error("Error while looping through the Bitmex strategies: %s", e)
 
-                    if data['table'] == 'trade':
+            if data['table'] == 'trade':
 
-                    for d in data['data']:
+                for d in data['data']:
 
-                        symbol = d['symbol']
-                        # in this case, the timestamp represents the time of the trade
-                        ts = int(dateutil.parser.isoparse(
-                            d['timestamp']).timestamp() * 1000)  # ts key in ISO 8601 format (as in the connectors part)
+                    symbol = d['symbol']
+                    # in this case, the timestamp represents the time of the trade
+                    ts = int(dateutil.parser.isoparse(
+                        d['timestamp']).timestamp() * 1000)  # ts key in ISO 8601 format (as in the connectors part)
 
-                        for key, strat in self.strategies.items():
-                            if strat.contract.symbol == symbol:
-                                res = strat.parse_trades(float(d['price']), float(d['size']), ts)
-                                strat.check_trade(res)
+                    for key, strat in self.strategies.items():
+                        if strat.contract.symbol == symbol:
+                            res = strat.parse_trades(float(d['price']), float(d['size']), ts)
+                            strat.check_trade(res)
 
-                    # if symbol == 'XBTUSD':
-                    # self._add_log(symbol + ' ' + str(self.prices[symbol]['bid']) + ' / ' + str(self.prices[symbol]['ask']))
+                # if symbol == 'XBTUSD':
+                # self._add_log(symbol + ' ' + str(self.prices[symbol]['bid']) + ' / ' + str(self.prices[symbol]['ask']))
 
-                    # print(symbol, self.prices[symbol])  # for testing
+                # print(symbol, self.prices[symbol])  # for testing
 
     def subscribe_channel(self, topic: str):
         data = dict()
@@ -322,9 +324,3 @@ class BitmexClient:
         logger.info("Bitmex current XBT balance = %s, contracts number = %s", balance, contracts_number)
 
         return int(contracts_number)
-
-
-
-
-
-

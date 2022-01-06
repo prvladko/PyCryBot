@@ -3049,3 +3049,21 @@
 2022-01-06 09:33:29,601 INFO  :: Binance connection opened
 2022-01-06 09:33:29,880 ERROR  :: error from callback <bound method BinanceFuturesClient._on_close of <connectors.binance_futures.BinanceFuturesClient object at 0x00000158222AE880>>: _on_close() takes 2 positional arguments but 4 were given
 2022-01-06 09:33:29,881 ERROR  :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-06 16:52:41,188 INFO  :: Binance Futures Client successfully initialized
+2022-01-06 16:52:41,819 INFO  :: Bitmex Client successfully initialized
+2022-01-06 16:52:42,369 INFO  :: Binance connection opened
+2022-01-06 16:52:43,213 INFO  :: Bitmex Websocket connection opened
+2022-01-06 16:52:43,274 ERROR  :: error from callback <bound method BinanceFuturesClient._on_close of <connectors.binance_futures.BinanceFuturesClient object at 0x000002886473AFD0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-06 16:52:43,275 ERROR  :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-06 16:52:46,436 INFO  :: Binance connection opened
+2022-01-06 16:52:46,713 ERROR  :: error from callback <bound method BinanceFuturesClient._on_close of <connectors.binance_futures.BinanceFuturesClient object at 0x000002886473AFD0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-06 16:52:46,714 ERROR  :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-06 16:54:58,772 INFO  :: Binance Futures Client successfully initialized
+2022-01-06 16:54:59,237 INFO  :: Bitmex Client successfully initialized
+2022-01-06 16:54:59,729 INFO  :: Bitmex Websocket connection opened
+2022-01-06 16:54:59,969 INFO  :: Binance connection opened
+2022-01-06 16:55:00,250 ERROR  :: error from callback <bound method BinanceFuturesClient._on_close of <connectors.binance_futures.BinanceFuturesClient object at 0x0000021825F3CA00>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-06 16:55:00,250 ERROR  :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-06 16:55:03,451 INFO  :: Binance connection opened
+2022-01-06 16:55:03,731 ERROR  :: error from callback <bound method BinanceFuturesClient._on_close of <connectors.binance_futures.BinanceFuturesClient object at 0x0000021825F3CA00>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-06 16:55:03,731 ERROR  :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
