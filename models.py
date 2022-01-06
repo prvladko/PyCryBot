@@ -100,10 +100,22 @@ class OrderStatus:
     def __init__(self, order_info: typing.Dict, exchange: str):
             if exchange == 'binance':
                 self.order_id = order_info['orderId']
-                self.status = order_info['status']
+                self.status = order_info['status'].lower()
                 self.avg_price = float(order_info['avgPrice'])
-
             elif exchange == 'bitmex':
                 self.order_id = order_info['orderID']
-                self.status = order_info['ordStatus']
+                self.status = order_info['ordStatus'].lower()
                 self.avg_price = float(order_info['avgPx'])
+
+
+class Trade:
+    def __init__(self, trade_info):
+        self.time: int = trade_info['time']
+        self.contract: int = trade_info['contract']
+        self.strategy: int = trade_info['strategy']
+        self.side: int = trade_info['side']
+        self.entry_price: int = trade_info['entry_price']
+        self.status: int = trade_info['status']
+        self.pnl: int = trade_info['pnl']
+        self.quantity: int = trade_info['quantity']
+        self.entry_id: int = trade_info['entry_id']

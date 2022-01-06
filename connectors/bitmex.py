@@ -182,7 +182,7 @@ class BitmexClient:
 
         return order_status
 
-    def get_order_status(self, order_id: int, contract: Contract) -> OrderStatus:
+    def get_order_status(self, contract: Contract, order_id: str) -> OrderStatus:  # order_id: int or str?
 
         data = dict()
         data['symbol'] = contract.symbol
